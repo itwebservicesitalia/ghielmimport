@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+
+    <title>Ghielmimport</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="overlay"></div>
+      <nav class="sidebar"></nav>
+      <div id="content">
+        <div id="conferma" class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Conferma invio richiesta di offerta</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Gentile Cliente, la sua richiesta è stata inviata con
+                  successo!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="container px-4 mt-3">
+                <div id="sidebar-toggle">
+                  <i class="fas fa-bars"></i>
+                </div>
+                <span class="page-title"
+                  >Modulo richiesta di offerta cemento</span
+                >
+                <hr />
+                <form id="cemento">
+                  <div class="form-group">
+                    <label for="denominazionecantiere"
+                      >Denominazione cantiere</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="denominazionecantiere"
+                      placeholder="Inserisci il nome del cantiere"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="cantiere">Ubicazione cantiere</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cantiere"
+                      placeholder="Inserisci il luogo e il CAP"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="cemento">Quantità cemento</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cemento"
+                      placeholder="... tonnellate"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="cantiereacquisito">Cantiere Acquisito</label>
+                    <select
+                      class="form-control"
+                      id="cantiereacquisito"
+                      required
+                    >
+                      <option selected disabled value="">Scegli</option>
+                      <option value="SI">Si</option>
+                      <option value="NO">No</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="tipofornitura">Tipologia fornitura</label>
+                    <select class="form-control" id="tipofornitura" required>
+                      <option selected disabled value="">Scegli</option>
+                      <option value="sfuso">Sfuso</option>
+                      <option value="sacco">Sacco</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="tipocemento">Tipologia cemento</label>
+                    <select class="form-control" id="tipocemento" required>
+                      <option selected disabled value="">Scegli</option>
+                      <option disabled value="">SFUSO</option>
+                      <option value="Cem II B-LL 32,5 R SFUSO"
+                        >Cem II B-LL 32,5 R</option
+                      >
+                      <option value="Cem II A-LL 32,5 R SFUSO"
+                        >Cem II A-LL 32,5 R</option
+                      >
+                      <option value="Cem II B-LL 42,5 R SFUSO"
+                        >Cem II B-LL 42,5 R</option
+                      >
+                      <option value="Cem II A-LL 42,5 R SFUSO"
+                        >Cem II A-LL 42,5 R</option
+                      >
+                      <option value="Cem III B 42,5N-LH/S R SFUSO"
+                        >Cem III B 42,5N-LH/S R</option
+                      >
+                      <option value="Cem I 42,5 R SFUSO">Cem I 42,5 R</option>
+                      <option value="Cem I 52,5 R SFUSO">Cem I 52,5 R</option>
+                      <option value="Cem IV A-V 42,5 R SFUSO"
+                        >Cem IV A-V 42,5 R</option
+                      >
+                      <option value="Cem I 52,5 R Bianco SFUSO"
+                        >Cem I 52,5 R Bianco</option
+                      >
+                      <option value="Cem II B-LL  42,5 R Bianco SFUSO"
+                        >Cem II B-LL 42,5 R Bianco</option
+                      >
+                      <option disabled value="">SACCO</option>
+                      <option value="Cem II B-LL 32,5 R SACCO"
+                        >Cem II B-LL 32,5 R</option
+                      >
+                      <option value="Cem II A-LL 32,5 R SACCO"
+                        >Cem II A-LL 32,5 R</option
+                      >
+                      <option value="Cem II B-LL 42,5 R SACCO"
+                        >Cem II B-LL 42,5 R</option
+                      >
+                      <option value="Cem II A-LL 42,5 R SACCO"
+                        >Cem II A-LL 42,5 R</option
+                      >
+                      <option value="Cem I 42,5 R SACCO">Cem I 42,5 R</option>
+                      <option value="Cem I 52,5 R SACCO">Cem I 52,5 R</option>
+                      <option value="Cem IV B-P 32,5 N SACCO"
+                        >Cem IV B-P 32,5 N</option
+                      >
+                      <option value="Cem I 52,5 R Bianco SACCO"
+                        >Cem I 52,5 R Bianco</option
+                      >
+                      <option value="Cem II B-LL  42,5 R Bianco SACCO"
+                        >Cem II B-LL 42,5 R Bianco</option
+                      >
+                      <option value="Cem II B-LL  32,5 R Bianco SACCO"
+                        >Cem II B-LL 32,5 R Bianco</option
+                      >
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="mezziaccessogomma"
+                      ><b>CONSEGNA SU GOMMA:</b><br />
+                      Tipologia di mezzo delle massime dimensioni possibili che
+                      può accedere al cantiere</label
+                    >
+                    <select
+                      class="form-control"
+                      id="mezziaccessogomma"
+                      required
+                    >
+                      <option selected disabled value="">Scegli</option>
+                      <option value="assi2"
+                        >2 Assi (Solo per Canton Ticino)</option
+                      >
+                      <option value="assi3">3 Assi</option>
+                      <option value="assi4">4 Assi</option>
+                      <option value="bilico">Bilico</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="mezziaccessotreno"
+                      ><b>CONSEGNA CON TRENO:</b><br />
+                      Dotazione raccordo ferroviario</label
+                    >
+                    <select
+                      class="form-control"
+                      id="mezziaccessotreno"
+                      required
+                    >
+                      <option selected disabled value="">Scegli</option>
+                      <option value="SI">Si</option>
+                      <option value="NO">No</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="limiti"
+                      >Eventuali limiti di accesso in altezza/larghezza</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="limiti"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="datainizio">Data inizio cantiere</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="datainizio"
+                      placeholder="gg/mm/aaaa"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="datafine">Data presunta fine cantiere</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="datafine"
+                      placeholder="gg/mm/aaaa"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="tipologiacantiere">Tipologia cantiere</label>
+                    <select
+                      class="form-control"
+                      id="tipologiacantiere"
+                      required
+                    >
+                      <option selected disabled value="">Scegli</option>
+                      <option value="residenziale">Residenziale</option>
+                      <option value="commerciale">Commerciale</option>
+                      <option value="geniocivile">Genio Civile</option>
+                      <option value="altro">Altro</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="grucantiere">Fornitura con camion-gru</label>
+                    <select class="form-control" id="grucantiere" required>
+                      <option selected disabled value="">Scegli</option>
+                      <option value="Si">Si</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="documenti"
+                      >Allega documenti specifici (Massimo 20MB)</label
+                    >
+                    <div class="input-group mb-3">
+                      <div class="custom-file">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="documenti"
+                        />
+                        <label
+                          class="custom-file-label"
+                          for="capitolato"
+                          data-browse="Sfoglia"
+                          >Seleziona il file</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <p class="h3">Informazioni di contatto</p>
+                  <hr />
+                  <div class="form-group">
+                    <label for="azienda">Azienda</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="azienda"
+                      placeholder="Inserisci la ragione sociale"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="personacontatto">Persona di contatto</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="personacontatto"
+                      placeholder="Inserisci il nome"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Inserisci la tua email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="telefono">Telefono</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="telefono"
+                      placeholder="Inserisci il numero di telefono"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="messaggio">Informazioni aggiuntive</label>
+                    <textarea
+                      class="form-control"
+                      id="messaggio"
+                      rows="6"
+                    ></textarea>
+                  </div>
+                  <a
+                    href="javascript:void(0)"
+                    id="submit"
+                    class="btn btn-block btn-primary text-white mb-2"
+                  >
+                    Invia la richiesta
+                  </a>
+                </form>
+                <hr />
+                <footer>
+                  <p>Copyright &copy; 2019 Ghielmimport SA</p>
+                </footer>
+              </div>
+            </div>
+            <div class="col-sm px-4 mt-4">
+              <!-- <p class="h4">Certificazione ...</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="assets/js/browser.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/form.js"></script>
+  </body>
+</html>

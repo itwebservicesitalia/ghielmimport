@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+
+    <title>Ghielmimport</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="overlay"></div>
+      <nav class="sidebar"></nav>
+      <div id="content">
+        <div id="conferma" class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Conferma invio richiesta di offerta</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Gentile Cliente, la sua richiesta è stata inviata con
+                  successo!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="empa" class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Certificazione EMPA</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="w-100" src="./assets/empa.png" alt="" />
+                <a href="assets/documenti/empa.pdf" class="btn btn-primary mt-2"
+                  >Download PDF</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="ferriere" class="modal" tabindex="-1" role="dialog">
+          <div
+            class="modal-lg modal-dialog modal-dialog-centered"
+            role="document"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Registro ferriere certificate</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="w-100" src="./assets/ferriere.png" alt="" />
+                <a
+                  href="assets/documenti/ferriere.pdf"
+                  class="btn btn-primary mt-2"
+                  >Download PDF</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="container px-4 mt-3">
+                <div id="sidebar-toggle">
+                  <i class="fas fa-bars"></i>
+                </div>
+                <span class="page-title"
+                  >Modulo richiesta di offerta Ferro</span
+                >
+                <hr />
+                <form id="ferro">
+                  <div class="form-group">
+                    <label for="denominazionecantiere"
+                      >Denominazione cantiere</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="denominazionecantiere"
+                      placeholder="Inserisci il nome del cantiere"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="cantiere">Ubicazione cantiere</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cantiere"
+                      placeholder="Inserisci il luogo e il CAP"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="ferro">Quantità ferro (tonnellate)</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="ferro"
+                      placeholder="... t"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="cantiereacquisito">Cantiere Acquisito</label>
+                    <select class="form-control" id="cantiereacquisito">
+                      <option selected disabled value="">Scegli</option>
+                      <option value="SI">Si</option>
+                      <option value="NO">No</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="mezziaccesso"
+                      >Tipologia di mezzo delle massime dimensioni possibili che
+                      può raggiungere il cantiere</label
+                    >
+                    <select class="form-control" id="mezziaccesso">
+                      <option selected disabled value="">Scegli</option>
+                      <option value="assi2"
+                        >2 Assi (Solo per Canton Ticino)</option
+                      >
+                      <option value="assi3">3 Assi</option>
+                      <option value="assi4">4 Assi</option>
+                      <option value="bilico">Bilico</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="limitazionicantiere"
+                      >Limitazioni eventuali di accesso al cantiere (portata e
+                      larghezza)</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="limitazionicantiere"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="grucantiere">Fornitura con camion-gru</label>
+                    <select class="form-control" id="grucantiere">
+                      <option selected disabled value="">Scegli</option>
+                      <option value="Si">Si</option>
+                      <option value="No">No</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="datainizio">Data inizio cantiere</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="datainizio"
+                      placeholder="gg/mm/aaaa"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="capitolato"
+                      >Allega capitolato tecnico (Massimo 10MB)</label
+                    >
+                    <div class="input-group mb-3">
+                      <div class="custom-file">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="capitolato"
+                        />
+                        <label
+                          class="custom-file-label"
+                          for="capitolato"
+                          data-browse="Sfoglia"
+                          >Seleziona il file</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="disegni">Allega disegni (Massimo 10MB)</label>
+                    <div class="input-group mb-3">
+                      <div class="custom-file">
+                        <input
+                          type="file"
+                          class="custom-file-input"
+                          id="disegni"
+                        />
+                        <label
+                          class="custom-file-label"
+                          for="disegni"
+                          data-browse="Sfoglia"
+                          >Seleziona il file</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="tipologiacantiere">Tipologia cantiere</label>
+                    <select class="form-control" id="tipologiacantiere">
+                      <option selected disabled value="">Scegli</option>
+                      <option value="residenziale">Residenziale</option>
+                      <option value="commercialeindustriale"
+                        >Commerciale/Industriale</option
+                      >
+                      <option value="geniocivile">Genio Civile</option>
+                      <option value="altro">Altro</option>
+                    </select>
+                  </div>
+                  <!-- Se residenziale -->
+
+                  <div class="form-group d-none" id="residenziale">
+                    <label for="presenzainterrato">Ha un interrato?</label>
+                    <select class="form-control" id="presenzainterrato">
+                      <option selected disabled value="">Scegli</option>
+                      <option value="SI">Si</option>
+                      <option value="NO">No</option>
+                    </select>
+                  </div>
+
+                  <!-- Se commerciale/industriale -->
+
+                  <div class="form-group d-none" id="commercialeindustriale">
+                    <label for="strutturaprefabbricata"
+                      >La struttura è prefabbricata?</label
+                    >
+                    <select class="form-control" id="strutturaprefabbricata">
+                      <option selected disabled value="">Scegli</option>
+                      <option value="SI">Si</option>
+                      <option value="NO">No</option>
+                    </select>
+                  </div>
+                  <!-- Se altro -->
+
+                  <div class="form-group d-none" id="altro">
+                    <label for="descrizionecantiere"
+                      >Descrivi tipologia cantiere</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="descrizionecantiere"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="ingegnere">Studio ingegneria civile</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="ingegnere"
+                      placeholder="Inserisci il nome / azienda"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="tipofornitura">Tipo di prestazione</label>
+                    <select class="form-control" id="tipofornitura">
+                      <option selected disabled value="">Scegli</option>
+                      <option value="fornitura"
+                        >Fornitura (con posa effettuata dall'impresa)</option
+                      >
+                      <option value="fornituraposa">Fornitura e posa</option>
+                    </select>
+                  </div>
+                  <p class="h3">Informazioni di contatto</p>
+                  <hr />
+                  <div class="form-group">
+                    <label for="azienda">Azienda</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="azienda"
+                      placeholder="Inserisci la ragione sociale"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="personacontatto">Persona di contatto</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="personacontatto"
+                      placeholder="Inserisci il nome"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Inserisci la tua email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="telefono">Telefono</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="telefono"
+                      placeholder="Inserisci il numero di telefono"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="messaggio">Informazioni aggiuntive</label>
+                    <textarea
+                      class="form-control"
+                      id="messaggio"
+                      rows="6"
+                    ></textarea>
+                  </div>
+                  <a
+                    href="javascript:void(0)"
+                    id="submit"
+                    class="btn btn-block btn-primary text-white mb-2"
+                  >
+                    Invia la richiesta
+                  </a>
+                </form>
+                <hr />
+                <footer>
+                  <p>Copyright &copy; 2019 Ghielmimport SA</p>
+                </footer>
+              </div>
+            </div>
+            <div class="col-md px-4 mt-4">
+              <p class="h4">Certificazione EMPA</p>
+              <div class="img-portfolio">
+                <a onclick="$('#empa').modal('show')"
+                  ><img class="w-100" src="assets/empa.png" alt=""
+                /></a>
+              </div>
+              <p class="lead mt-2 text-justify">
+                Lo stabilimento Ghielmimport per la sagomatura del ferro per
+                cemento armato ha la certificazione EMPA e usa esclusivamente
+                materiale omologato per la Svizzera. Ghielmimport rispetta i
+                requisiti di mandrinatura dettati dalla normativa SIA 262; nel
+                programma di rilevamento delle liste ferro sono impostati i
+                raggi corretti per ogni diametro e sagoma.
+              </p>
+              <p class="h4">Registro ferriere certificate</p>
+              <div class="img-portfolio">
+                <a onclick="$('#ferriere').modal('show')"
+                  ><img class="w-100" src="assets/ferriere.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="assets/js/browser.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+    <script src="assets/js/form.js"></script>
+    <script>
+      var tipologiacantiere = document.getElementById("tipologiacantiere");
+      var residenziale = document.getElementById("residenziale");
+      var commercialeindustriale = document.getElementById(
+        "commercialeindustriale"
+      );
+      var altro = document.getElementById("altro");
+
+      tipologiacantiere.addEventListener("change", function(e) {
+        switch (tipologiacantiere.value) {
+          case "residenziale":
+            residenziale.classList.remove("d-none");
+            commercialeindustriale.classList.add("d-none");
+            altro.classList.add("d-none");
+
+            break;
+          case "commercialeindustriale":
+            residenziale.classList.add("d-none");
+            commercialeindustriale.classList.remove("d-none");
+            altro.classList.add("d-none");
+            break;
+          case "altro":
+            residenziale.classList.add("d-none");
+            commercialeindustriale.classList.add("d-none");
+            altro.classList.remove("d-none");
+            break;
+          case "geniocivile":
+            residenziale.classList.add("d-none");
+            commercialeindustriale.classList.add("d-none");
+            altro.classList.add("d-none");
+            break;
+        }
+      });
+    </script>
+  </body>
+</html>
