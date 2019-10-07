@@ -1,36 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/sidebar.css" />
-
+    <?php include "include/head.php" ?>
     <title>Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="overlay"></div>
-      <nav class="sidebar"></nav>
+      <?php include "include/sidebar.php" ?>
       <div id="lightbox" class="modal">
         <div
           class="modal-xl modal-dialog modal-dialog-centered"
@@ -65,14 +41,14 @@
           </div>
         </div>
       </div>
-      <div id="easyfit" class="modal" tabindex="-1" role="dialog">
+      <div id="ferbox" class="modal" tabindex="-1" role="dialog">
         <div
           class="modal-xl modal-dialog modal-dialog-centered"
           role="document"
         >
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">EASYFIT</h5>
+              <h5 class="modal-title">FERBOX Ferri di ripresa</h5>
               <button
                 type="button"
                 class="close"
@@ -85,12 +61,10 @@
             <div class="modal-body">
               <img
                 class="w-100"
-                src="assets/accessori/easyfit/easyfit-modelli.png"
+                src="assets/accessori/ferbox/ferbox-modelli.png"
                 alt=""
               />
-              <a
-                href="assets/documenti/easyfit.pdf"
-                class="btn btn-primary mt-2"
+              <a href="assets/documenti/ferbox.pdf" class="btn btn-primary mt-2"
                 >Download PDF</a
               >
             </div>
@@ -111,7 +85,7 @@
               <div class="col-sm-4">
                 <div class="img-container">
                   <img
-                    src="assets/accessori/easyfit.png"
+                    src="assets/accessori/ferbox.png"
                     alt=""
                     class="lightbox-img"
                   />
@@ -119,135 +93,103 @@
                 <div class="img-gallery">
                   <img
                     class="w-100 lightbox-img"
-                    src="assets/accessori/easyfit/easyfit1.png"
+                    src="assets/accessori/ferbox/ferbox1.png"
                     alt=""
                   />
-                  <a onclick="$('#easyfit').modal('show')">
+                  <a onclick="$('#ferbox').modal('show')">
                     <img
                       class="img-portfolio w-100"
-                      src="assets/accessori/easyfit/easyfit-modelli.png"
+                      src="assets/accessori/ferbox/ferbox-modelli.png"
                       alt=""
                     />
                   </a>
-                  <img
-                    class="w-100 lightbox-img"
-                    src="assets/accessori/easyfit/easyfit2.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="w-100 lightbox-img"
-                    src="assets/accessori/easyfit/easyfit3.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="w-100 lightbox-img"
-                    src="assets/accessori/easyfit/easyfit4.jpg"
-                    alt=""
-                  />
-                  <img
-                    class="w-100 lightbox-img"
-                    src="assets/accessori/easyfit/easyfit5.jpg"
-                    alt=""
-                  />
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3>EASYFIT</h3>
+                <h3>Ferbox ferri di ripresa</h3>
                 <p class="lead"></p>
                 <hr />
                 <p class="h5">Richiesta d'offerta</p>
-                <form id="easyfit">
+                <form id="ferbox">
                   <div class="form-group">
-                    <label for="sagoma"
-                      >Forma sagoma ferro
-                      <a
-                        href="javascript:void(0)"
-                        onclick="$('#easyfit').modal('show')"
-                        >(vedi allegato)</a
-                      ></label
-                    >
-
-                    <select class="form-control" id="sagoma" required>
-                      <option selected disabled value="">Scegli</option>
-                      <option value="MU">MU</option>
-                      <option value="DMU">DMU</option>
-                      <option value="ANMU">ANMU</option>
-                      <option value="AN">AN</option>
-                      <option value="MUEG">MUEG</option>
-                      <option value="MUEV">MUEV</option>
-                      <option value="MUB">MUB</option>
-                      <option value="ANB">ANB</option>
-                      <option value="NT">NT</option>
-                      <option value="DMUB">DMUB</option>
-                      <option value="ANMUB">ANMUB</option>
-                      <option value="SpannmuffeSP">Spannmuffe SP</option>
-                      <option value="MUBB">MUBB</option>
-                      <option value="ANBB">ANBB</option>
-                      <option value="DMUBB">DMUBB</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="diametro">Diametro ferro (millimetri)</label>
-
-                    <select class="form-control" id="diametro" required>
-                      <option selected disabled value="">Scegli</option>
-                      <option value="10">10</option>
-                      <option value="12">12</option>
-                      <option value="14">14</option>
-                      <option value="16">16</option>
-                      <option value="18">18</option>
-                      <option value="20">20</option>
-                      <option value="22">22</option>
-                      <option value="26">26</option>
-                      <option value="30">30</option>
-                      <option value="34">34</option>
-                      <option value="40">40</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="numeropezzi">Numero pezzi</label>
+                    <label for="tipoferbox">Tipo FERBOX</label>
                     <input
-                      type="number"
+                      type="text"
                       class="form-control"
-                      id="numeropezzi"
-                      placeholder="Inserisci il numero di pezzi"
-                      required
+                      id="tipoferbox"
+                      placeholder="Inserisci il tipo"
                     />
                   </div>
                   <div class="form-group">
-                    <label for="diametropiastrine"
-                      >Diametro piastrine (millimetri)</label
-                    >
+                    <label for="lunghezza">Lunghezza (metri)</label>
 
-                    <select
-                      class="form-control"
-                      id="diametropiastrine"
-                      required
-                    >
+                    <select class="form-control" id="lunghezza" required>
                       <option selected disabled value="">Scegli</option>
-                      <option value="10">10</option>
-                      <option value="12">12</option>
-                      <option value="14">14</option>
-                      <option value="16">16</option>
-                      <option value="18">18</option>
-                      <option value="20">20</option>
-                      <option value="22">22</option>
-                      <option value="26">26</option>
-                      <option value="30">30</option>
-                      <option value="34">34</option>
-                      <option value="40">40</option>
+                      <option value="0.80">0.80</option>
+                      <option value="1.25">1.25</option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="numeropezzipiastrine"
-                      >Numero pezzi piastrine</label
+                    <label for="diametro">Diametro (millimetri)</label>
+
+                    <select class="form-control" id="diametro" required>
+                      <option selected disabled value="">Scegli</option>
+                      <option value="8">8</option>
+                      <option value="10">10</option>
+                      <option value="12">12</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="spessoreprimatappa"
+                      >Spessore muro 1° tappa (mm)</label
                     >
                     <input
-                      type="number"
+                      type="text"
                       class="form-control"
-                      id="numeropezzipiastrine"
-                      placeholder="Inserisci il numero di piastrine"
-                      required
+                      id="spessoreprimatappa"
+                      placeholder="Inserisci lo spessore"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="spessoresecondatappa"
+                      >Spessore muro 2° tappa (mm)</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="spessoresecondatappa"
+                      placeholder="Inserisci lo spessore"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="lunghezzaancoraggio"
+                      >Lunghezza di ancoraggio (mm)</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="lunghezzaancoraggio"
+                      placeholder="Inserisci la lunghezza"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="ferboxspeciali"
+                      >Eventuali FERBOX speciali</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="ferboxspeciali"
+                      placeholder=""
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="numeropezzi">Numero pezzi (o metri)</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="numeropezzi"
+                      placeholder="Inserisci il numero di pezzi (o metri)"
                     />
                   </div>
                   <div class="form-group">
@@ -329,25 +271,6 @@
         </div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-    <script src="assets/js/browser.js"></script>
-    <script src="assets/js/sidebar.js"></script>
-    <script src="assets/js/form.js"></script>
+    <?php include "include/script.php" ?>
   </body>
 </html>

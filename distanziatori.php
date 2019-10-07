@@ -1,48 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/sidebar.css" />
-
+    <?php include "include/head.php" ?>
     <title>Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="overlay"></div>
-      <nav class="sidebar"></nav>
+      <?php include "include/sidebar.php" ?>
       <div id="lightbox" class="modal">
-        <div
-          class="modal-xl modal-dialog modal-dialog-centered"
-          role="document"
-        >
-          <div class="modal-content">
-            <div class="modal-body">
-              <img class="w-100" src="" alt="" id="lightbox-modal-img" />
+          <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                  <div class="modal-body">
+                    <img class="w-100" src="" alt="" id="lightbox-modal-img">
+                  </div>
             </div>
           </div>
         </div>
-      </div>
       <div id="conferma" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
@@ -65,14 +38,14 @@
           </div>
         </div>
       </div>
-      <div id="ferbox" class="modal" tabindex="-1" role="dialog">
+      <div id="distanziatori" class="modal" tabindex="-1" role="dialog">
         <div
           class="modal-xl modal-dialog modal-dialog-centered"
           role="document"
         >
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">FERBOX Ferri di ripresa</h5>
+              <h5 class="modal-title">Distanziatori</h5>
               <button
                 type="button"
                 class="close"
@@ -85,10 +58,13 @@
             <div class="modal-body">
               <img
                 class="w-100"
-                src="assets/accessori/ferbox/ferbox-modelli.png"
+                src="assets/accessori/distanziatori/distanziatori-modelli.png"
                 alt=""
               />
-              <a href="assets/documenti/ferbox.pdf" class="btn btn-primary mt-2"
+
+              <a
+                href="assets/documenti/distanziatori.pdf"
+                class="btn btn-primary mt-2"
                 >Download PDF</a
               >
             </div>
@@ -108,105 +84,47 @@
             <div class="row">
               <div class="col-sm-4">
                 <div class="img-container">
-                  <img
-                    src="assets/accessori/ferbox.png"
-                    alt=""
-                    class="lightbox-img"
-                  />
+                  <img src="assets/accessori/distanziatori.png" alt="" class="lightbox-img" />
                 </div>
                 <div class="img-gallery">
-                  <img
-                    class="w-100 lightbox-img"
-                    src="assets/accessori/ferbox/ferbox1.png"
-                    alt=""
-                  />
-                  <a onclick="$('#ferbox').modal('show')">
+                  <a onclick="$('#distanziatori').modal('show')">
                     <img
                       class="img-portfolio w-100"
-                      src="assets/accessori/ferbox/ferbox-modelli.png"
+                      src="assets/accessori/distanziatori/distanziatori-modelli.png"
                       alt=""
                     />
                   </a>
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3>Ferbox ferri di ripresa</h3>
+                <h3>Distanziatori</h3>
                 <p class="lead"></p>
                 <hr />
                 <p class="h5">Richiesta d'offerta</p>
-                <form id="ferbox">
+                <form id="distanziatori">
                   <div class="form-group">
-                    <label for="tipoferbox">Tipo FERBOX</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="tipoferbox"
-                      placeholder="Inserisci il tipo"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="lunghezza">Lunghezza (metri)</label>
+                    <label for="piedino">Presenza piedino</label>
 
-                    <select class="form-control" id="lunghezza" required>
+                    <select class="form-control" id="piedino" required>
                       <option selected disabled value="">Scegli</option>
-                      <option value="0.80">0.80</option>
-                      <option value="1.25">1.25</option>
+                      <option value="si">Sì</option>
+                      <option value="no">No</option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="diametro">Diametro (millimetri)</label>
+                    <label for="altezza">Altezza (da 4cm a 110cm)</label>
 
-                    <select class="form-control" id="diametro" required>
-                      <option selected disabled value="">Scegli</option>
-                      <option value="8">8</option>
-                      <option value="10">10</option>
-                      <option value="12">12</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="spessoreprimatappa"
-                      >Spessore muro 1° tappa (mm)</label
-                    >
                     <input
-                      type="text"
+                      type="number"
                       class="form-control"
-                      id="spessoreprimatappa"
-                      placeholder="Inserisci lo spessore"
+                      id="altezza"
+                      placeholder="Inserisci l'altezza in centimetri"
+                      required
+                      min="4"
+                      max="110"
                     />
                   </div>
-                  <div class="form-group">
-                    <label for="spessoresecondatappa"
-                      >Spessore muro 2° tappa (mm)</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="spessoresecondatappa"
-                      placeholder="Inserisci lo spessore"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="lunghezzaancoraggio"
-                      >Lunghezza di ancoraggio (mm)</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="lunghezzaancoraggio"
-                      placeholder="Inserisci la lunghezza"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="ferboxspeciali"
-                      >Eventuali FERBOX speciali</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="ferboxspeciali"
-                      placeholder=""
-                    />
-                  </div>
+
                   <div class="form-group">
                     <label for="numeropezzi">Numero pezzi (o metri)</label>
                     <input
@@ -214,6 +132,7 @@
                       class="form-control"
                       id="numeropezzi"
                       placeholder="Inserisci il numero di pezzi (o metri)"
+                      required
                     />
                   </div>
                   <div class="form-group">
@@ -295,25 +214,6 @@
         </div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-    <script src="assets/js/browser.js"></script>
-    <script src="assets/js/sidebar.js"></script>
-    <script src="assets/js/form.js"></script>
+    <?php include "include/script.php" ?>
   </body>
 </html>

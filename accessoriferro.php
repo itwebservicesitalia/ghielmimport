@@ -1,29 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/sidebar.css" />
-
+  <?php include "include/head.php" ?>
     <style>
       /* Card */
       .card .img-wrap {
@@ -37,12 +15,11 @@
         width: 100%;
       }
     </style>
-    <title>Ghielmimport</title>
+    <title>Accessori Ferro - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="overlay"></div>
-      <nav class="sidebar"></nav>
+    <?php include "include/sidebar.php" ?>
       <div id="content">
         <div class="container px-4 mt-3">
           <div id="sidebar-toggle">
@@ -60,7 +37,7 @@
                   <div class="card-content">
                     <h5 class="card-title">EASYFIT</h5>
 
-                    <a href="easyfit" class="btn btn-primary"
+                    <a href="easyfit.php" class="btn btn-primary"
                       >Richiedi offerta</a
                     >
                   </div>
@@ -76,7 +53,7 @@
                   <div class="card-content">
                     <h5 class="card-title">Ferbox ferri di ripresa</h5>
 
-                    <a href="ferbox" class="btn btn-primary"
+                    <a href="ferbox.php" class="btn btn-primary"
                       >Richiedi offerta</a
                     >
                   </div>
@@ -91,7 +68,7 @@
                 <div class="card-body d-flex align-items-end pt-2">
                   <div class="card-content">
                     <h5 class="card-title">Distanziatori</h5>
-                    <a href="distanziatori" class="btn btn-primary"
+                    <a href="distanziatori.php" class="btn btn-primary"
                       >Richiedi offerta</a
                     >
                   </div>
@@ -107,7 +84,7 @@
                   <div class="card-content">
                     <h5 class="card-title">Legacci</h5>
 
-                    <a href="legacci" class="btn btn-primary"
+                    <a href="legacci.php" class="btn btn-primary"
                       >Richiedi offerta</a
                     >
                   </div>
@@ -123,7 +100,7 @@
                   <div class="card-content">
                     <h5 class="card-title">Spinotti</h5>
 
-                    <a href="spinotti" class="btn btn-primary"
+                    <a href="spinotti.php" class="btn btn-primary"
                       >Richiedi offerta</a
                     >
                   </div>
@@ -139,7 +116,7 @@
                   <div class="card-content">
                     <h5 class="card-title">Ferrofix tipo Rasterfix&reg;</h5>
 
-                    <a href="rasterfix" class="btn btn-primary"
+                    <a href="rasterfix.php" class="btn btn-primary"
                       >Richiedi offerta</a
                     >
                   </div>
@@ -155,7 +132,7 @@
                   <div class="card-content">
                     <h5 class="card-title">Ferrofix tipo Drunterfix&reg;</h5>
 
-                    <a href="drunterfix" class="btn btn-primary"
+                    <a href="drunterfix.php" class="btn btn-primary"
                       >Richiedi offerta</a
                     >
                   </div>
@@ -170,25 +147,6 @@
         </div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
-    <script src="assets/js/browser.js"></script>
-    <script src="assets/js/sidebar.js"></script>
-    <script src="assets/js/form.js"></script>
+    <?php include "include/script.php" ?>
   </body>
 </html>
