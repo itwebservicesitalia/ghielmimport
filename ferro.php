@@ -105,7 +105,7 @@
                       type="text"
                       class="form-control"
                       id="denominazionecantiere"
-                      placeholder="Inserisci il nome del cantiere"
+                      placeholder="<? translate("Inserisci il nome del cantiere", "Geben Sie den Namen der Baustelle ein","Entrez le nom du chantier") ?>"
                       required
                     />
                   </div>
@@ -115,7 +115,7 @@
                       type="text"
                       class="form-control"
                       id="cantiere"
-                      placeholder="Inserisci il luogo e il CAP"
+                      placeholder="<? translate("Inserisci il luogo e il CAP", "Geben Sie den Ort und die Postleitzahl ein","Entrez le lieu et le code postal") ?>"
                       required
                     />
                   </div>
@@ -145,11 +145,11 @@
                     <select class="form-control" id="mezziaccesso">
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="assi2"
-                        >2 Assi (Solo per Canton Ticino)</option
+                        ><? translate("2 Assi (Solo per Canton Ticino)", "2 Äxte (nur für Kanton Tessin)","2 axes (uniquement pour le canton du Tessin)") ?></option
                       >
-                      <option value="assi3">3 Assi</option>
-                      <option value="assi4">4 Assi</option>
-                      <option value="bilico">Bilico</option>
+                      <option value="assi3"><? translate("3 Assi", "3 Asse","3 As") ?></option>
+                      <option value="assi4"><? translate("4 Assi", "4 Asse","4 As") ?></option>
+                      <option value="bilico"><? translate("Bilico", "Der Rest","Equilibre") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
@@ -195,7 +195,7 @@
                         <label
                           class="custom-file-label"
                           for="capitolato"
-                          data-browse="Sfoglia"
+                          data-browse="<? translate("Sfoglia", "Wählen","Choisir") ?>"
                           ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sèlectionnez le fichier") ?></label
                         >
                       </div>
@@ -213,7 +213,7 @@
                         <label
                           class="custom-file-label"
                           for="disegni"
-                          data-browse="Sfoglia"
+                          data-browse="<? translate("Sfoglia", "Wählen","Choisir") ?>"
                           ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Typologie de chantier") ?></label
                         >
                       </div>
@@ -235,7 +235,7 @@
                   <!-- Se residenziale -->
 
                   <div class="form-group d-none" id="residenziale">
-                    <label for="presenzainterrato">Ha un interrato?</label>
+                    <label for="presenzainterrato"><? translate("Ha un interrato?", "Hast du einen Keller?","Avez-vous un sous-sol?") ?></label>
                     <select class="form-control" id="presenzainterrato">
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="SI"><? translate("Si", "Ja","Oui") ?></option>
@@ -247,7 +247,7 @@
 
                   <div class="form-group d-none" id="commercialeindustriale">
                     <label for="strutturaprefabbricata"
-                      >La struttura è prefabbricata?</label
+                      ><? translate("La struttura è prefabbricata?", "Ist die Struktur vorgefertigt?","La structure est-elle préfabriquée?") ?></label
                     >
                     <select class="form-control" id="strutturaprefabbricata">
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
@@ -259,7 +259,7 @@
 
                   <div class="form-group d-none" id="altro">
                     <label for="descrizionecantiere"
-                      >Descrivi tipologia cantiere</label
+                      ><? translate("Descrivi tipologia cantiere", "Beschreiben der Site-Typologie","Décrire la typologie du site") ?></label
                     >
                     <input
                       type="text"
@@ -274,7 +274,7 @@
                       type="text"
                       class="form-control"
                       id="ingegnere"
-                      placeholder="Inserisci il nome / azienda"
+                      placeholder="<? translate("Inserisci il nome / azienda", "Geben Sie den Namen / die Firma ein","Entrez le nom / entreprise") ?>"
                     />
                   </div>
                   <div class="form-group">
@@ -295,7 +295,7 @@
                       type="text"
                       class="form-control"
                       id="azienda"
-                      placeholder="Inserisci la ragione sociale"
+                      placeholder="<? translate("Inserisci la ragione sociale","Geben Sie den Firmennamen ein","Entrez le nom de l'entreprise") ?>"
                       required
                     />
                   </div>
@@ -305,7 +305,7 @@
                       type="text"
                       class="form-control"
                       id="personacontatto"
-                      placeholder="Inserisci il nome"
+                      placeholder="<? translate("Inserisci il nome","Geben Sie den Namen ein","Entrez le nom") ?>"
                       required
                     />
                   </div>
@@ -315,7 +315,7 @@
                       type="email"
                       class="form-control"
                       id="email"
-                      placeholder="Inserisci la tua email"
+                      placeholder="<? translate("Inserisci la tua email","Geben Sie Ihre E-Mail-Adresse ein","Entrez votre email") ?>"
                       required
                     />
                   </div>
@@ -325,7 +325,7 @@
                       type="text"
                       class="form-control"
                       id="telefono"
-                      placeholder="Inserisci il numero di telefono"
+                      placeholder="<? translate("Inserisci il numero di telefono","Geben Sie die Telefonnummer ein","Entrez le numéro de téléphone") ?>"
                       required
                     />
                   </div>
