@@ -8,13 +8,13 @@
   <div class="sidebar-heading">
     <div class="row mb-2">
       <div class="col">
-        <a href="?lang=it" class="btn btn-light <? if($_GET["lang"] === "it" || $_GET["lang"] === ""){ echo "active"; } ?>"><img class="flag" src="../assets/bandiere/it.png" alt=""></a>
+        <a href="?lang=it" class="btn btn-light <? if($_GET["lang"] === "it" || $_GET["lang"] === ""){ echo "active"; } ?>"><img class="flag" src="assets/bandiere/it.png" alt=""></a>
       </div>
       <div class="col">
-        <a href="?lang=de" class="btn btn-light <? if($_GET["lang"] === "de"){ echo "active"; } ?>"><img class="flag" src="../assets/bandiere/de.png" alt=""></a>
+        <a href="?lang=de" class="btn btn-light <? if($_GET["lang"] === "de"){ echo "active"; } ?>"><img class="flag" src="assets/bandiere/de.png" alt=""></a>
       </div>
       <div class="col">
-        <a href="?lang=fr" class="btn btn-light <? if($_GET["lang"] === "fr"){ echo "active"; } ?>"><img class="flag" src="../assets/bandiere/fr.png" alt=""></a>
+        <a href="?lang=fr" class="btn btn-light <? if($_GET["lang"] === "fr"){ echo "active"; } ?>"><img class="flag" src="assets/bandiere/fr.png" alt=""></a>
       </div>
     </div>
     <span class="h4"><? translate("Richiesta d'offerta", "Anfrageformular","Demande d'offre") ?></span>
