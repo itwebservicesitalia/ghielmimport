@@ -6,12 +6,23 @@
     </a>
   </div>
   <div class="sidebar-heading">
-    <span class="h4">Richiesta d'offerta</span>
+    <div class="row mb-2">
+      <div class="col">
+        <a href="?lang=it" class="btn btn-light <? if($_GET["lang"] === "it" || $_GET["lang"] === ""){ echo "active"; } ?>"><img class="flag" src="../assets/bandiere/it.png" alt=""></a>
+      </div>
+      <div class="col">
+        <a href="?lang=de" class="btn btn-light <? if($_GET["lang"] === "de"){ echo "active"; } ?>"><img class="flag" src="../assets/bandiere/de.png" alt=""></a>
+      </div>
+      <div class="col">
+        <a href="?lang=fr" class="btn btn-light <? if($_GET["lang"] === "fr"){ echo "active"; } ?>"><img class="flag" src="../assets/bandiere/fr.png" alt=""></a>
+      </div>
+    </div>
+    <span class="h4"><? translate("Richiesta d'offerta", "Anfrageformular","Demande d'offre") ?></span>
   </div>
   <ul class="sidebar-menu">  
-    <a href="ferro.php"><li>Ferro</li></a>
-    <a href="accessoriferro.php"><li>Accessori Ferro</li></a>
-    <a href="accessoriferrospeciali.php"><li>Accessori Ferro (speciali)</li></a>
-    <a href="cemento.php"><li>Cemento</li></a>
+    <a href="ferro.php"><li><? translate("Ferro", "Eisen","Fer") ?></li></a>
+    <a href="accessoriferro.php"><li><? translate("Accessori Ferro", "Eisen Zubehör","Accessoires de fer") ?></li></a>
+    <a href="accessoriferrospeciali.php"><li><? translate("Accessori Ferro (speciali)", "Eisen Zubehör (Spezial)","Accessoires de fer (spécial)") ?></li></a>
+    <a href="cemento.php"><li><? translate("Cemento", "Zement","Ciment") ?></li></a>
   </ul>
 </nav>

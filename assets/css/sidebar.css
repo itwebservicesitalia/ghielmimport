@@ -54,6 +54,14 @@
 }
 /* End sidebar */
 
+/* Language switcher */
+
+.flag {
+  width: 30px;
+}
+
+/* End Language switcher */
+
 @media (max-width: 768px) {
   .sidebar {
     margin-left: -300px;

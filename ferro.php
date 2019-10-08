@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +7,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <?php include "include/sidebar.php" ?>
+      <?php include "include/sidebar.php"; ?>
       <div id="content">
         <div id="conferma" class="modal" tabindex="-1" role="dialog">
           <div class="modal-dialog modal-dialog-centered" role="document">
@@ -91,13 +92,14 @@
                   <i class="fas fa-bars"></i>
                 </div>
                 <span class="page-title"
-                  >Modulo richiesta di offerta Ferro</span
+                  ><? translate("Modulo richiesta di offerta Ferro", "Anfrageformular für Eisen Angebot","Formulaire de demande d'offre Fer") ?>
+                  </span
                 >
                 <hr />
                 <form id="ferro">
                   <div class="form-group">
                     <label for="denominazionecantiere"
-                      >Denominazione cantiere</label
+                      ><? translate("Denominazione cantiere", "Name der Baustelle","Désignation du site") ?></label
                     >
                     <input
                       type="text"
@@ -108,7 +110,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="cantiere">Ubicazione cantiere</label>
+                    <label for="cantiere"><? translate("Ubicazione cantiere", "Baustelle","Emplacement du site") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -118,7 +120,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="ferro">Quantità ferro (tonnellate)</label>
+                    <label for="ferro"><? translate("Quantità ferro (tonnellate)", "Eisenmenge","Quantité de fer (tonnes)") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -128,20 +130,20 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="cantiereacquisito">Cantiere Acquisito</label>
+                    <label for="cantiereacquisito"><? translate("Cantiere Acquisito", "Erworbene Baustelle","Acquisition du chantier") ?></label>
                     <select class="form-control" id="cantiereacquisito">
-                      <option selected disabled value="">Scegli</option>
-                      <option value="SI">Si</option>
-                      <option value="NO">No</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="SI"><? translate("Si", "Ja","Oui") ?></option>
+                      <option value="NO"><? translate("No", "Nein","Non") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="mezziaccesso"
-                      >Tipologia di mezzo delle massime dimensioni possibili che
-                      può raggiungere il cantiere</label
+                      ><? translate("Tipologia di mezzo delle massime dimensioni possibili che
+                      può raggiungere il cantiere", "Fahrzeugtyp mit den maximal möglichen Abmessungen, die er auf der Baustelle erreichen kann","Type de véhicule aux dimensions maximales possibles que le chantier peut atteindre") ?></label
                     >
                     <select class="form-control" id="mezziaccesso">
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="assi2"
                         >2 Assi (Solo per Canton Ticino)</option
                       >
@@ -152,8 +154,7 @@
                   </div>
                   <div class="form-group">
                     <label for="limitazionicantiere"
-                      >Limitazioni eventuali di accesso al cantiere (portata e
-                      larghezza)</label
+                      ><? translate("Limitazioni eventuali di accesso al cantiere (portata e larghezza)", "Mögliche Einschränkungen des Site-Zugriffs (Kapazität und Breite)","Possibilités d'accès au site (capacité et largeur)") ?></label
                     >
                     <input
                       type="text"
@@ -163,15 +164,15 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="grucantiere">Fornitura con camion-gru</label>
+                    <label for="grucantiere"><? translate("Fornitura con camion-gru", "Lieferung mit Autokran","Fourniture avec camion-grue") ?></label>
                     <select class="form-control" id="grucantiere">
-                      <option selected disabled value="">Scegli</option>
-                      <option value="Si">Si</option>
-                      <option value="No">No</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="Si"><? translate("Si", "Ja","Oui") ?></option>
+                      <option value="No"><? translate("No", "Nein","Non") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="datainizio">Data inizio cantiere</label>
+                    <label for="datainizio"><? translate("Data inizio cantiere", "Baustellenstartdatum","Date de début du chantier") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -182,7 +183,7 @@
 
                   <div class="form-group">
                     <label for="capitolato"
-                      >Allega capitolato tecnico (Massimo 10MB)</label
+                      ><? translate("Allega capitolato tecnico (Massimo 10MB)", "Technische Spezifikationen beifügen (maximal 10 MB)","Joindre les spécifications techniques (maximum 10 Mo)") ?></label
                     >
                     <div class="input-group mb-3">
                       <div class="custom-file">
@@ -195,13 +196,13 @@
                           class="custom-file-label"
                           for="capitolato"
                           data-browse="Sfoglia"
-                          >Seleziona il file</label
+                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sèlectionnez le fichier") ?></label
                         >
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="disegni">Allega disegni (Massimo 10MB)</label>
+                    <label for="disegni"><? translate("Allega disegni (Massimo 10MB)", "Zeichnungen anhängen (maximal 10 MB)","Joindre des dessins (maximum 10 Mo)") ?></label>
                     <div class="input-group mb-3">
                       <div class="custom-file">
                         <input
@@ -213,22 +214,22 @@
                           class="custom-file-label"
                           for="disegni"
                           data-browse="Sfoglia"
-                          >Seleziona il file</label
+                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Typologie de chantier") ?></label
                         >
                       </div>
                     </div>
                   </div>
 
                   <div class="form-group">
-                    <label for="tipologiacantiere">Tipologia cantiere</label>
+                    <label for="tipologiacantiere"><? translate("Tipologia cantiere", "Baustellentypologie","J'étudie en génie civil") ?></label>
                     <select class="form-control" id="tipologiacantiere">
-                      <option selected disabled value="">Scegli</option>
-                      <option value="residenziale">Residenziale</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="residenziale"><? translate("Residenziale", "Wohn","Rèsidentiel") ?></option>
                       <option value="commercialeindustriale"
-                        >Commerciale/Industriale</option
+                        ><? translate("Commerciale/Industriale", "Gewerbe / Industrie","Commercial/Industriel") ?></option
                       >
-                      <option value="geniocivile">Genio Civile</option>
-                      <option value="altro">Altro</option>
+                      <option value="geniocivile"><? translate("Genio Civile", "Bauingenieure","Ingènieurs civils") ?></option>
+                      <option value="altro"><? translate("Altro", "Andere","Autre") ?></option>
                     </select>
                   </div>
                   <!-- Se residenziale -->
@@ -236,9 +237,9 @@
                   <div class="form-group d-none" id="residenziale">
                     <label for="presenzainterrato">Ha un interrato?</label>
                     <select class="form-control" id="presenzainterrato">
-                      <option selected disabled value="">Scegli</option>
-                      <option value="SI">Si</option>
-                      <option value="NO">No</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="SI"><? translate("Si", "Ja","Oui") ?></option>
+                      <option value="NO"><? translate("No", "Nein","Non") ?></option>
                     </select>
                   </div>
 
@@ -249,9 +250,9 @@
                       >La struttura è prefabbricata?</label
                     >
                     <select class="form-control" id="strutturaprefabbricata">
-                      <option selected disabled value="">Scegli</option>
-                      <option value="SI">Si</option>
-                      <option value="NO">No</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="SI"><? translate("Si", "Ja","Oui") ?></option>
+                      <option value="NO"><? translate("No", "Nein","Non") ?></option>
                     </select>
                   </div>
                   <!-- Se altro -->
@@ -268,7 +269,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="ingegnere">Studio ingegneria civile</label>
+                    <label for="ingegnere"><? translate("Studio ingegneria civile", "Ich studiere Bauingenieurwesen","J'étudie en génie civil") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -277,19 +278,19 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="tipofornitura">Tipo di prestazione</label>
+                    <label for="tipofornitura"><? translate("Tipo di prestazione", "Art der Dienstleistungen","Type de service") ?></label>
                     <select class="form-control" id="tipofornitura">
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="fornitura"
-                        >Fornitura (con posa effettuata dall'impresa)</option
+                        ><? translate("Fornitura (con posa effettuata dall'impresa)", "Lieferung (bei Installation durch die Firma)","Fourniture (avec installation rèalisèe par l'enterprise)") ?></option
                       >
-                      <option value="fornituraposa">Fornitura e posa</option>
+                      <option value="altro"><? translate("Altro, specificare in informazioni aggiuntive","Anderes, in zusätzlichen Informationen angeben","Autre, précisez dans les informations supplémentaires") ?></option>
                     </select>
                   </div>
-                  <p class="h3">Informazioni di contatto</p>
+                  <p class="h3"><? translate("Informazioni di contatto","Kontaktinformationen","Informations de contact") ?></p>
                   <hr />
                   <div class="form-group">
-                    <label for="azienda">Azienda</label>
+                    <label for="azienda"><? translate("Azienda","Unternehmen","Société") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -299,7 +300,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="personacontatto">Persona di contatto</label>
+                    <label for="personacontatto"><? translate("Persona di contatto","Ansprechpartner","Personne de contact") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -309,7 +310,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email"><? translate("Email","Email","Email") ?></label>
                     <input
                       type="email"
                       class="form-control"
@@ -319,7 +320,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="telefono">Telefono</label>
+                    <label for="telefono"><? translate("Telefono","Telefon","Téléphone") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -329,7 +330,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="messaggio">Informazioni aggiuntive</label>
+                    <label for="messaggio"><? translate("Informazioni aggiuntive","Zusätzliche Informationen","Informations complémentaires") ?></label>
                     <textarea
                       class="form-control"
                       id="messaggio"
@@ -341,7 +342,7 @@
                     id="submit"
                     class="btn btn-block btn-primary text-white mb-2"
                   >
-                    Invia la richiesta
+                  <? translate("Invia la richiesta","Senden sie die anfrage","Envoyer la demande") ?>
                   </a>
                 </form>
                 <hr />
@@ -351,21 +352,21 @@
               </div>
             </div>
             <div class="col-md px-4 mt-4">
-              <p class="h4">Certificazione EMPA</p>
+              <p class="h4"><? translate("Certificazione EMPA","EMPA-Zertifizierung","Certification EMPA") ?></p>
               <div class="img-portfolio">
                 <a onclick="$('#empa').modal('show')"
                   ><img class="w-100" src="assets/empa.png" alt=""
                 /></a>
               </div>
               <p class="lead mt-2 text-justify">
-                Lo stabilimento Ghielmimport per la sagomatura del ferro per
+              <? translate("Lo stabilimento Ghielmimport per la sagomatura del ferro per
                 cemento armato ha la certificazione EMPA e usa esclusivamente
                 materiale omologato per la Svizzera. Ghielmimport rispetta i
                 requisiti di mandrinatura dettati dalla normativa SIA 262; nel
                 programma di rilevamento delle liste ferro sono impostati i
-                raggi corretti per ogni diametro e sagoma.
+                raggi corretti per ogni diametro e sagoma.", "Das Ghielmimport-Werk zur Umformung von Eisen für Stahlbeton ist EMPA-zertifiziert und verwendet ausschliesslich für die Schweiz zugelassenes Material. Ghielmimport respektiert die Erweiterungsanforderungen der SIA 262-Verordnung. im eisenlistenerkennungsprogramm werden für jeden durchmesser und jede form die richtigen radien eingestellt.","L'usine de façonnage du fer pour béton armé de Ghielmimport est certifiée EMPA et utilise exclusivement des matériaux approuvés pour la Suisse. Ghielmimport respecte les exigences d'extension imposées par le règlement SIA 262; dans le programme de détection de liste de fer, les rayons corrects sont définis pour chaque diamètre et forme.") ?>
               </p>
-              <p class="h4">Registro ferriere certificate</p>
+              <p class="h4"><? translate("Registro ferriere certificate","Register der zertifizierten Eisenwerke","Registre des forges certifiées") ?></p>
               <div class="img-portfolio">
                 <a onclick="$('#ferriere').modal('show')"
                   ><img class="w-100" src="assets/ferriere.png" alt=""

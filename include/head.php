@@ -1,3 +1,18 @@
+<?php
+  function translate($it,$de,$fr){
+    $lang = $_GET["lang"]; //variabile lingua
+    switch ($lang){
+      case "fr":
+        echo $fr;
+        break;
+      case "de":
+        echo $de;
+        break;
+      default:
+        echo $it;
+    };
+  }
+?>
 <!-- Required meta tags -->
 <meta charset="utf-8" />
     <meta
