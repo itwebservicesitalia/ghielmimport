@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Richiesta d'offerta</title>
-    <meta http-equiv="refresh" content="0;URL=ferro.php">
+    <meta http-equiv="refresh" content="0;URL=ferro">
 </head>
 <body>
     
