@@ -9,29 +9,7 @@
     <div class="wrapper">
       <?php include "include/sidebar.php" ?>
       <div id="content">
-        <div id="conferma" class="modal" tabindex="-1" role="dialog">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Conferma invio richiesta di offerta</h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>
-                  Gentile Cliente, la sua richiesta è stata inviata con
-                  successo!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <?php include "include/modal.php" ?>
         <div class="container">
           <div class="row">
             <div class="col-sm-8">
@@ -40,67 +18,67 @@
                   <i class="fas fa-bars"></i>
                 </div>
                 <span class="page-title"
-                  >Modulo richiesta di offerta cemento</span
+                  ><? translate("Modulo richiesta di offerta cemento","Antragsformular für Zementangebot","Formulaire de demande d'offre de ciment") ?></span
                 >
                 <hr />
                 <form id="cemento">
                   <div class="form-group">
                     <label for="denominazionecantiere"
-                      >Denominazione cantiere</label
+                      ><? translate("Denominazione cantiere","Standortbezeichnung","Désignation du site") ?></label
                     >
                     <input
                       type="text"
                       class="form-control"
                       id="denominazionecantiere"
-                      placeholder="Inserisci il nome del cantiere"
+                      placeholder="<? translate("Inserisci il nome del cantiere","Geben Sie den Namen des Hofes ein","Entrez le nom de la cour") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="cantiere">Ubicazione cantiere</label>
+                    <label for="cantiere"><? translate("Ubicazione cantiere","Standort der Site","Emplacement du site") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="cantiere"
-                      placeholder="Inserisci il luogo e il CAP"
+                      placeholder="<? translate("Inserisci il luogo e il CAP","Entrez le lieu et le code postal","Entrez le lieu et le code postal") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="cemento">Quantità cemento</label>
+                    <label for="cemento"><? translate("Quantità cemento","Zement menge","Quantité de ciment") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="cemento"
-                      placeholder="... tonnellate"
+                      placeholder="... t"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="cantiereacquisito">Cantiere Acquisito</label>
+                    <label for="cantiereacquisito"><? translate("Cantiere Acquisito","Erworbene Baustelle","Acquisition du chantier") ?></label>
                     <select
                       class="form-control"
                       id="cantiereacquisito"
                       required
                     >
-                      <option selected disabled value="">Scegli</option>
-                      <option value="SI">Si</option>
-                      <option value="NO">No</option>
+                    <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="SI"><? translate("Si", "Ja","Oui") ?></option>
+                      <option value="NO"><? translate("No", "Nein","Non") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="tipofornitura">Tipologia fornitura</label>
+                    <label for="tipofornitura"><? translate("Tipologia fornitura", "Versorgungsart","Type d'approvisionnement") ?></label>
                     <select class="form-control" id="tipofornitura" required>
-                      <option selected disabled value="">Scegli</option>
-                      <option value="sfuso">Sfuso</option>
-                      <option value="sacco">Sacco</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="sfuso"><? translate("Sfuso", "Masse","Masse") ?></option>
+                      <option value="sacco"><? translate("Sacco", "Sacco","Sacco") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="tipocemento">Tipologia cemento</label>
+                    <label for="tipocemento"><? translate("Tipologia cemento", "Zement typ","Type de ciment") ?></label>
                     <select class="form-control" id="tipocemento" required>
-                      <option selected disabled value="">Scegli</option>
-                      <option disabled value="">SFUSO</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option disabled value=""><? translate("SFUSO", "MASSE","MASSE") ?></option>
                       <option value="Cem II B-LL 32,5 R SFUSO"
                         >Cem II B-LL 32,5 R</option
                       >
@@ -127,7 +105,7 @@
                       <option value="Cem II B-LL  42,5 R Bianco SFUSO"
                         >Cem II B-LL 42,5 R Bianco</option
                       >
-                      <option disabled value="">SACCO</option>
+                      <option disabled value=""><? translate("SACCO", "SACCO","SACCO") ?></option>
                       <option value="Cem II B-LL 32,5 R SACCO"
                         >Cem II B-LL 32,5 R</option
                       >
@@ -159,42 +137,42 @@
 
                   <div class="form-group">
                     <label for="mezziaccessogomma"
-                      ><b>CONSEGNA SU GOMMA:</b><br />
-                      Tipologia di mezzo delle massime dimensioni possibili che
-                      può accedere al cantiere</label
+                      ><b><? translate("CONSEGNA SU GOMMA:", "GUMMILIEFERUNG:","LIVRAISON DE CAOUTCHOUC:") ?></b><br />
+                      <? translate("Tipologia di mezzo delle massime dimensioni possibili che
+                      può accedere al cantiere", "Fahrzeugtyp mit den maximal möglichen Abmessungen, die auf den Hof zugreifen können","Type de véhicule aux dimensions maximales possibles pouvant accéder au chantier") ?></label
                     >
                     <select
                       class="form-control"
                       id="mezziaccessogomma"
                       required
                     >
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="assi2"
-                        >2 Assi (Solo per Canton Ticino)</option
+                        ><? translate("2 Assi (Solo per Canton Ticino)", "2 Äxte (nur für Kanton Tessin)","2 axes (uniquement pour le canton du Tessin)") ?></option
                       >
-                      <option value="assi3">3 Assi</option>
-                      <option value="assi4">4 Assi</option>
-                      <option value="bilico">Bilico</option>
+                      <option value="assi3"><? translate("3 Assi", "3 Asse","3 As") ?></option>
+                      <option value="assi4"><? translate("4 Assi", "4 Asse","4 As") ?></option>
+                      <option value="bilico"><? translate("Bilico", "Der Rest","Equilibre") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="mezziaccessotreno"
-                      ><b>CONSEGNA CON TRENO:</b><br />
-                      Dotazione raccordo ferroviario</label
+                      ><b><? translate("CONSEGNA CON TRENO:", "LIEFERUNG MIT DER BAHN:","LIVRAISON EN TRAIN:") ?></b><br />
+                      <? translate("Dotazione raccordo ferroviario", "Eisenbahnknotenpunkt","Carrefour") ?></label
                     >
                     <select
                       class="form-control"
                       id="mezziaccessotreno"
                       required
                     >
-                      <option selected disabled value="">Scegli</option>
-                      <option value="SI">Si</option>
-                      <option value="NO">No</option>
+                    <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="Si"><? translate("Si", "Ja","Oui") ?></option>
+                      <option value="No"><? translate("No", "Nein","Non") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="limiti"
-                      >Eventuali limiti di accesso in altezza/larghezza</label
+                      ><? translate("Eventuali limiti di accesso in altezza/larghezza", "Mögliche Zugangsbeschränkungen in Höhe / Breite","Limites d'accès possibles en hauteur / largeur") ?></label
                     >
                     <input
                       type="text"
@@ -204,7 +182,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="datainizio">Data inizio cantiere</label>
+                    <label for="datainizio"><? translate("Data inizio cantiere", "Baustellenstartdatum","Date de début du chantier") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -214,7 +192,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="datafine">Data presunta fine cantiere</label>
+                    <label for="datafine"><? translate("Data presunta fine cantiere", "Voraussichtliches Ende der Baustelle","Fin présumée du chantier") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -224,30 +202,32 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="tipologiacantiere">Tipologia cantiere</label>
+                    <label for="tipologiacantiere"><? translate("Tipologia cantiere", "Baustellentypologie","J'étudie en génie civil") ?></label>
                     <select
                       class="form-control"
                       id="tipologiacantiere"
                       required
                     >
-                      <option selected disabled value="">Scegli</option>
-                      <option value="residenziale">Residenziale</option>
-                      <option value="commerciale">Commerciale</option>
-                      <option value="geniocivile">Genio Civile</option>
-                      <option value="altro">Altro</option>
+                    <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="residenziale"><? translate("Residenziale", "Wohn","Rèsidentiel") ?></option>
+                      <option value="commercialeindustriale"
+                        ><? translate("Commerciale/Industriale", "Gewerbe / Industrie","Commercial/Industriel") ?></option
+                      >
+                      <option value="geniocivile"><? translate("Genio Civile", "Bauingenieure","Ingènieurs civils") ?></option>
+                      <option value="altro"><? translate("Altro", "Andere","Autre") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="grucantiere">Fornitura con camion-gru</label>
+                    <label for="grucantiere"><? translate("Fornitura con camion-gru", "Lieferung mit Autokran","Fourniture avec camion-grue") ?></label>
                     <select class="form-control" id="grucantiere" required>
-                      <option selected disabled value="">Scegli</option>
-                      <option value="Si">Si</option>
-                      <option value="No">No</option>
+                    <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="Si"><? translate("Si", "Ja","Oui") ?></option>
+                      <option value="No"><? translate("No", "Nein","Non") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="documenti"
-                      >Allega documenti specifici (Massimo 20MB)</label
+                      ><? translate("Allega documenti specifici (Massimo 20MB)", "Spezifische Dokumente anhängen (maximal 20 MB)","Joindre des documents spécifiques (maximum 20 Mo)") ?></label
                     >
                     <div class="input-group mb-3">
                       <div class="custom-file">
@@ -259,75 +239,15 @@
                         <label
                           class="custom-file-label"
                           for="capitolato"
-                          data-browse="Sfoglia"
-                          >Seleziona il file</label
+                          data-browse="<? translate("Sfoglia", "Wählen","Choisir") ?>"
+                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Typologie de chantier") ?></label
                         >
                       </div>
                     </div>
                   </div>
-
-                  <p class="h3">Informazioni di contatto</p>
-                  <hr />
-                  <div class="form-group">
-                    <label for="azienda">Azienda</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="azienda"
-                      placeholder="Inserisci la ragione sociale"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="personacontatto">Persona di contatto</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="personacontatto"
-                      placeholder="Inserisci il nome"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Inserisci la tua email"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="telefono">Telefono</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="telefono"
-                      placeholder="Inserisci il numero di telefono"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="messaggio">Informazioni aggiuntive</label>
-                    <textarea
-                      class="form-control"
-                      id="messaggio"
-                      rows="6"
-                    ></textarea>
-                  </div>
-                  <a
-                    href="javascript:void(0)"
-                    id="submit"
-                    class="btn btn-block btn-primary text-white mb-2"
-                  >
-                    Invia la richiesta
-                  </a>
+                  <?php include "include/contact.php"; ?>
                 </form>
-                <hr />
-                <footer>
-                  <p>Copyright &copy; 2019 Ghielmimport SA</p>
-                </footer>
+                <?php include "include/footer.php" ?>
               </div>
             </div>
             <div class="col-sm px-4 mt-4">

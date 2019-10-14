@@ -25,7 +25,7 @@
           <div id="sidebar-toggle">
             <i class="fas fa-bars"></i>
           </div>
-          <span class="page-title">Accessori Ferro (pronta consegna)</span>
+          <span class="page-title"><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span>
           <hr />
           <div class="row">
             <div class="col-lg-4 col-md-6">
@@ -38,7 +38,7 @@
                     <h5 class="card-title">EASYFIT</h5>
 
                     <a href="easyfit.php" class="btn btn-primary"
-                      >Richiedi offerta</a
+                      ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>
                 </div>
@@ -54,7 +54,7 @@
                     <h5 class="card-title">Ferbox ferri di ripresa</h5>
 
                     <a href="ferbox.php" class="btn btn-primary"
-                      >Richiedi offerta</a
+                      ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>
                 </div>
@@ -69,7 +69,7 @@
                   <div class="card-content">
                     <h5 class="card-title">Distanziatori</h5>
                     <a href="distanziatori.php" class="btn btn-primary"
-                      >Richiedi offerta</a
+                      ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>
                 </div>
@@ -85,7 +85,7 @@
                     <h5 class="card-title">Legacci</h5>
 
                     <a href="legacci.php" class="btn btn-primary"
-                      >Richiedi offerta</a
+                      ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>
                 </div>
@@ -101,7 +101,7 @@
                     <h5 class="card-title">Spinotti</h5>
 
                     <a href="spinotti.php" class="btn btn-primary"
-                      >Richiedi offerta</a
+                      ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>
                 </div>
@@ -117,7 +117,7 @@
                     <h5 class="card-title">Ferrofix tipo Rasterfix&reg;</h5>
 
                     <a href="rasterfix.php" class="btn btn-primary"
-                      >Richiedi offerta</a
+                      ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>
                 </div>
@@ -133,7 +133,7 @@
                     <h5 class="card-title">Ferrofix tipo Drunterfix&reg;</h5>
 
                     <a href="drunterfix.php" class="btn btn-primary"
-                      >Richiedi offerta</a
+                      ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>
                 </div>

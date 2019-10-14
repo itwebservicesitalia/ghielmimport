@@ -19,28 +19,8 @@
           </div>
         </div>
       </div>
-      <div id="conferma" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Conferma invio richiesta di offerta</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Gentile Cliente, la sua richiesta è stata inviata con successo!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php include "include/modal.php" ?>
+
       <div id="spinotti" class="modal" tabindex="-1" role="dialog">
         <div
           class="modal-xl modal-dialog modal-dialog-centered"
@@ -200,71 +180,13 @@
                       placeholder=""
                     />
                   </div>
-                  <p class="h4">Informazioni di contatto</p>
-                  <hr />
-                  <div class="form-group">
-                    <label for="azienda">Azienda</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="azienda"
-                      placeholder="Inserisci la ragione sociale"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="personacontatto">Persona di contatto</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="personacontatto"
-                      placeholder="Inserisci il nome"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Inserisci la tua email"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="telefono">Telefono</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="telefono"
-                      placeholder="Inserisci il numero di telefono"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="messaggio">Informazioni aggiuntive</label>
-                    <textarea
-                      class="form-control"
-                      id="messaggio"
-                      rows="6"
-                    ></textarea>
-                  </div>
-                  <a
-                    href="javascript:void(0)"
-                    id="submit"
-                    class="btn btn-block btn-primary text-white mb-2"
-                  >
-                    Invia la richiesta
-                  </a>
+                  <?php include "include/contact.php"; ?>
+
                 </form>
               </div>
             </div>
           </div>
-          <hr />
-          <footer>
-            <p>Copyright &copy; 2019 Ghielmimport SA</p>
-          </footer>
+          <?php include "include/footer.php" ?>
         </div>
       </div>
     </div>

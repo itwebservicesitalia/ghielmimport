@@ -16,28 +16,7 @@
             </div>
           </div>
         </div>
-      <div id="conferma" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Conferma invio richiesta di offerta</h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>
-                Gentile Cliente, la sua richiesta è stata inviata con successo!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+        <?php include "include/modal.php" ?>
       <div id="distanziatori" class="modal" tabindex="-1" role="dialog">
         <div
           class="modal-xl modal-dialog modal-dialog-centered"
@@ -146,50 +125,50 @@
                       placeholder=""
                     />
                   </div>
-                  <p class="h4">Informazioni di contatto</p>
+                  <p class="h3"><? translate("Informazioni di contatto","Kontaktinformationen","Informations de contact") ?></p>
                   <hr />
                   <div class="form-group">
-                    <label for="azienda">Azienda</label>
+                    <label for="azienda"><? translate("Azienda","Unternehmen","Société") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="azienda"
-                      placeholder="Inserisci la ragione sociale"
+                      placeholder="<? translate("Inserisci la ragione sociale","Geben Sie den Firmennamen ein","Entrez le nom de l'entreprise") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="personacontatto">Persona di contatto</label>
+                    <label for="personacontatto"><? translate("Persona di contatto","Ansprechpartner","Personne de contact") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="personacontatto"
-                      placeholder="Inserisci il nome"
+                      placeholder="<? translate("Inserisci il nome","Geben Sie den Namen ein","Entrez le nom") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email"><? translate("Email","Email","Email") ?></label>
                     <input
                       type="email"
                       class="form-control"
                       id="email"
-                      placeholder="Inserisci la tua email"
+                      placeholder="<? translate("Inserisci la tua email","Geben Sie Ihre E-Mail-Adresse ein","Entrez votre email") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="telefono">Telefono</label>
+                    <label for="telefono"><? translate("Telefono","Telefon","Téléphone") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="telefono"
-                      placeholder="Inserisci il numero di telefono"
+                      placeholder="<? translate("Inserisci il numero di telefono","Geben Sie die Telefonnummer ein","Entrez le numéro de téléphone") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="messaggio">Informazioni aggiuntive</label>
+                    <label for="messaggio"><? translate("Informazioni aggiuntive","Zusätzliche Informationen","Informations complémentaires") ?></label>
                     <textarea
                       class="form-control"
                       id="messaggio"
@@ -201,16 +180,13 @@
                     id="submit"
                     class="btn btn-block btn-primary text-white mb-2"
                   >
-                    Invia la richiesta
+                  <? translate("Invia la richiesta","Senden sie die anfrage","Envoyer la demande") ?>
                   </a>
                 </form>
               </div>
             </div>
           </div>
-          <hr />
-          <footer>
-            <p>Copyright &copy; 2019 Ghielmimport SA</p>
-          </footer>
+          <?php include "include/footer.php" ?>
         </div>
       </div>
     </div>

@@ -22,30 +22,7 @@
         </div>
       </div>
       <div id="content">
-        <div id="conferma" class="modal" tabindex="-1" role="dialog">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title">Conferma invio richiesta di offerta</h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <p>
-                  Gentile Cliente, la sua richiesta è stata inviata con
-                  successo!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <?php include "include/modal.php" ?>
         <div class="container">
           <div class="row">
             <div class="col-md-8">
@@ -54,35 +31,35 @@
                   <i class="fas fa-bars"></i>
                 </div>
                 <span class="page-title"
-                  >Modulo richiesta di offerta Accessori Ferro (speciali)</span
+                  ><? translate("Modulo richiesta di offerta Accessori Ferro (speciali)", "Anfrageformular für Eisen Angebot (spezial)","Formulaire de demande d'offre Fer (special)") ?></span
                 >
                 <hr />
                 <form id="accessoriferrospeciali">
                   <div class="form-group">
                     <label for="denominazionecantiere"
-                      >Denominazione cantiere</label
+                      ><? translate("Denominazione cantiere", "Name der Baustelle","Désignation du site") ?></label
                     >
                     <input
                       type="text"
                       class="form-control"
                       id="denominazionecantiere"
-                      placeholder="Inserisci il nome del cantiere"
+                      placeholder="<? translate("Inserisci il nome del cantiere", "Geben Sie den Namen der Baustelle ein","Entrez le nom du chantier") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="cantiere">Ubicazione cantiere</label>
+                    <label for="cantiere"><? translate("Ubicazione cantiere", "Baustelle","Emplacement du site") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="cantiere"
-                      placeholder="Inserisci il luogo e il CAP"
+                      placeholder="<? translate("Inserisci il luogo e il CAP", "Geben Sie den Ort und die Postleitzahl ein","Entrez le lieu et le code postal") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
                     <label for="lista1"
-                      >Allega liste accessori (Massimo 10MB)</label
+                      ><? translate("Allega liste accessori (Massimo 10MB)", "Zubehörlisten anhängen (maximal 10 MB)","Joindre des listes d’accessoires (10 Mo maximum)") ?></label
                     >
                     <div class="input-group mb-3">
                       <div class="custom-file">
@@ -94,15 +71,15 @@
                         <label
                           class="custom-file-label"
                           for="lista1"
-                          data-browse="Sfoglia"
-                          >Seleziona il file</label
+                          data-browse="<? translate("Sfoglia", "Wählen","Choisir") ?>"
+                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sèlectionnez le fichier") ?></label
                         >
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="lista2"
-                      >Allega liste accessori (Massimo 10MB)</label
+                      ><? translate("Allega liste accessori (Massimo 10MB)", "Zubehörlisten anhängen (maximal 10 MB)","Joindre des listes d’accessoires (10 Mo maximum)") ?></label
                     >
                     <div class="input-group mb-3">
                       <div class="custom-file">
@@ -114,15 +91,15 @@
                         <label
                           class="custom-file-label"
                           for="lista2"
-                          data-browse="Sfoglia"
-                          >Seleziona il file</label
+                          data-browse="<? translate("Sfoglia", "Wählen","Choisir") ?>"
+                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sèlectionnez le fichier") ?></label
                         >
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="lista3"
-                      >Allega liste accessori (Massimo 10MB)</label
+                      ><? translate("Allega liste accessori (Massimo 10MB)", "Zubehörlisten anhängen (maximal 10 MB)","Joindre des listes d’accessoires (10 Mo maximum)") ?></label
                     >
                     <div class="input-group mb-3">
                       <div class="custom-file">
@@ -134,15 +111,15 @@
                         <label
                           class="custom-file-label"
                           for="lista3"
-                          data-browse="Sfoglia"
-                          >Seleziona il file</label
+                          data-browse="<? translate("Sfoglia", "Wählen","Choisir") ?>"
+                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sèlectionnez le fichier") ?></label
                         >
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <label for="lista4"
-                      >Allega liste accessori (Massimo 10MB)</label
+                      ><? translate("Allega liste accessori (Massimo 10MB)", "Zubehörlisten anhängen (maximal 10 MB)","Joindre des listes d’accessoires (10 Mo maximum)") ?></label
                     >
                     <div class="input-group mb-3">
                       <div class="custom-file">
@@ -154,85 +131,26 @@
                         <label
                           class="custom-file-label"
                           for="lista4"
-                          data-browse="Sfoglia"
-                          >Seleziona il file</label
+                          data-browse="<? translate("Sfoglia", "Wählen","Choisir") ?>"
+                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sèlectionnez le fichier") ?></label
                         >
                       </div>
                     </div>
                   </div>
 
                   <div class="form-group">
-                    <label for="ingegnere">Studio ingegneria civile</label>
+                    <label for="ingegnere"><? translate("Studio ingegneria civile", "Ich studiere Bauingenieurwesen","J'étudie en génie civil") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="ingegnere"
-                      placeholder="Inserisci il nome / azienda"
+                      placeholder="<? translate("Inserisci il nome / azienda", "Geben Sie den Namen / die Firma ein","Entrez le nom / entreprise") ?>"
                     />
                   </div>
 
-                  <p class="h3">Informazioni di contatto</p>
-                  <hr />
-                  <div class="form-group">
-                    <label for="azienda">Azienda</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="azienda"
-                      placeholder="Inserisci la ragione sociale"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="personacontatto">Persona di contatto</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="personacontatto"
-                      placeholder="Inserisci il nome"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Inserisci la tua email"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="telefono">Telefono</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="telefono"
-                      placeholder="Inserisci il numero di telefono"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="messaggio">Informazioni aggiuntive</label>
-                    <textarea
-                      class="form-control"
-                      id="messaggio"
-                      rows="6"
-                    ></textarea>
-                  </div>
-                  <a
-                    href="javascript:void(0)"
-                    id="submit"
-                    class="btn btn-block btn-primary text-white mb-2"
-                  >
-                    Invia la richiesta
-                  </a>
+                  <?php include "include/contact.php"; ?>
                 </form>
-                <hr />
-                <footer>
-                  <p>Copyright &copy; 2019 Ghielmimport SA</p>
-                </footer>
+                <?php include "include/footer.php" ?>
               </div>
             </div>
             <div class="col-md px-4 mt-4">
