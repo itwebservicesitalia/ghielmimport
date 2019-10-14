@@ -38,7 +38,7 @@
                     <h5 class="card-title">EASYFIT</h5>
 
                     <a href="easyfit.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>" class="btn btn-primary"
-                      ><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></a
+                      ><? translate("Richiesta d'offerta", "Angebot anforden","Demande d'offre") ?></a
                     >
                   </div>
                 </div>
