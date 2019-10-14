@@ -37,7 +37,7 @@
                   <div class="card-content">
                     <h5 class="card-title">EASYFIT</h5>
 
-                    <a href="easyfit.php" class="btn btn-primary"
+                    <a href="easyfit.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>" class="btn btn-primary"
                       ><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></a
                     >
                   </div>
@@ -53,7 +53,7 @@
                   <div class="card-content">
                     <h5 class="card-title"><? translate("Ferbox ferri di ripresa", "Ferbox-Schießeisen","Ferbox fers à repasser") ?></h5>
 
-                    <a href="ferbox.php" class="btn btn-primary"
+                    <a href="ferbox.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre") ?></a
                     >
                   </div>
@@ -68,7 +68,7 @@
                 <div class="card-body d-flex align-items-end pt-2">
                   <div class="card-content">
                     <h5 class="card-title"><? translate("Distanziatori", "Abstandshalter","Écarteurs") ?></h5>
-                    <a href="distanziatori.php" class="btn btn-primary"
+                    <a href="distanziatori.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>
@@ -84,7 +84,7 @@
                   <div class="card-content">
                     <h5 class="card-title"><? translate("Legacci", "Wiretires","Wiretires") ?></h5>
 
-                    <a href="legacci.php" class="btn btn-primary"
+                    <a href="legacci.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>
@@ -100,7 +100,7 @@
                   <div class="card-content">
                     <h5 class="card-title"><? translate("Spinotti", "Jacks","Jacks") ?></h5>
 
-                    <a href="spinotti.php" class="btn btn-primary"
+                    <a href="spinotti.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>
@@ -116,7 +116,7 @@
                   <div class="card-content">
                     <h5 class="card-title"><? translate("Ferrofix tipo Rasterfix&reg;", "Ferrofix Typ Rasterfix&reg;","Type ferrofix Rasterfix&reg;") ?></h5>
 
-                    <a href="rasterfix.php" class="btn btn-primary"
+                    <a href="rasterfix.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>
@@ -132,7 +132,7 @@
                   <div class="card-content">
                     <h5 class="card-title"><? translate("Ferrofix tipo Drunterfix&reg;", "Ferrofix Typ Drunterfix&reg;","Type ferrofix Drunterfix&reg;") ?></h5>
 
-                    <a href="drunterfix.php" class="btn btn-primary"
+                    <a href="drunterfix.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
                   </div>

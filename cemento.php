@@ -134,7 +134,17 @@
                       >
                     </select>
                   </div>
-
+                  <div class="form-group">
+                    <label for="requisititecnici"
+                      ><? translate("Requisiti tecnici particolari", "Spezifische technische Anforderungen","Requisiti tecnici particolari") ?></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="requisititecnici"
+                      placeholder=""
+                    />
+                  </div>
                   <div class="form-group">
                     <label for="mezziaccessogomma"
                       ><b><? translate("CONSEGNA SU GOMMA:", "GUMMILIEFERUNG:","LIVRAISON DE CAOUTCHOUC:") ?></b><br />

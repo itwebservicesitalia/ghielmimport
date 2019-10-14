@@ -15,7 +15,7 @@
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Certificazione EMPA</h5>
+                <h5 class="modal-title"><? translate("Certificazione EMPA","EMPA-Zertifizierung","Certification EMPA") ?></h5>
                 <button
                   type="button"
                   class="close"
@@ -41,7 +41,7 @@
           >
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title">Registro ferriere certificate</h5>
+                <h5 class="modal-title"><? translate("Registro ferriere certificate","Register der zertifizierten Eisenwerke","Registre des forges certifiées") ?></h5>
                 <button
                   type="button"
                   class="close"
@@ -55,6 +55,35 @@
                 <img class="w-100" src="./assets/ferriere.png" alt="" />
                 <a
                   href="assets/documenti/ferriere.pdf"
+                  class="btn btn-primary mt-2"
+                  >Download PDF</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="dittecertificate" class="modal" tabindex="-1" role="dialog">
+          <div
+            class="modal-lg modal-dialog modal-dialog-centered"
+            role="document"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title"><? translate("Registro delle ditte certificate secondo la norma SIA 262 per la lavorazione del materiale in rotoli","Register der nach der Norm SIA 262 zertifizierten Unternehmen für die Verarbeitung von Rollenmaterial","Registre des entreprises certifiées selon la norme SIA 262 pour le traitement du matériau en rouleau") ?></h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="w-100" src="assets/registrodittecertificate.png" alt="" />
+                <a
+                  href="assets/documenti/registrodittecertificate.pdf"
                   class="btn btn-primary mt-2"
                   >Download PDF</a
                 >
@@ -278,6 +307,8 @@
                   ><img class="w-100" src="assets/empa.png" alt=""
                 /></a>
               </div>
+              <br>
+              <a href="assets/documenti/aspat.pdf" target="_blank" class="btn btn-primary"><? translate("Download Listino Aspat","Liste herunterladen Aspat","Télécharger la liste Aspat") ?></a>
               <p class="lead mt-2 text-justify">
               <? translate("Lo stabilimento Ghielmimport per la sagomatura del ferro per
                 cemento armato ha la certificazione EMPA e usa esclusivamente
@@ -290,6 +321,13 @@
               <div class="img-portfolio">
                 <a onclick="$('#ferriere').modal('show')"
                   ><img class="w-100" src="assets/ferriere.png" alt=""
+                /></a>
+              </div>
+              <br>
+              <p class="h5"><? translate("Registro delle ditte certificate secondo la norma SIA 262 per la lavorazione del materiale in rotoli","Register der nach der Norm SIA 262 zertifizierten Unternehmen für die Verarbeitung von Rollenmaterial","Registre des entreprises certifiées selon la norme SIA 262 pour le traitement du matériau en rouleau") ?></p>
+              <div class="img-portfolio">
+                <a onclick="$('#dittecertificate').modal('show')"
+                  ><img class="w-100" src="assets/registrodittecertificate.png" alt=""
                 /></a>
               </div>
             </div>
