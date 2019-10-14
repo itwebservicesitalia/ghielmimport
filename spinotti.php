@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <?php include "include/head.php" ?>
-    <title>Ghielmimport</title>
+    <title><? translate("Spinotti", "Jacks","Jacks") ?> - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
@@ -28,7 +28,7 @@
         >
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Spinotti</h5>
+              <h5 class="modal-title"><? translate("Spinotti", "Jacks","Jacks") ?></h5>
               <button
                 type="button"
                 class="close"
@@ -59,7 +59,7 @@
             <i class="fas fa-bars"></i>
           </div>
           <span class="page-title d-md-block mb-2"
-            >Accessori Ferro (pronta consegna)</span
+            ><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span
           >
 
           <div class="card">
@@ -83,28 +83,28 @@
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3>Spinotti</h3>
+                <h3><? translate("Spinotti", "Jacks","Jacks") ?></h3>
                 <p class="lead"></p>
                 <hr />
-                <p class="h5">Richiesta d'offerta</p>
+                <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="spinotti">
                   <div class="form-group">
-                    <label for="tipospinotto">Tipo Spinotto</label>
+                    <label for="tipospinotto"><? translate("Tipo Spinotto", "Steckertyp","Type de prise") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="tipospinotto"
-                      placeholder="Inserisci il tipo"
+                      placeholder="<? translate("Inserisci il tipo", "Geben Sie den Typ ein","Entrez le type") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
                     <label for="lunghezza"
-                      >Lunghezza spinotto (millimetri)</label
+                      ><? translate("Lunghezza spinotto (millimetri)", "Stiftlänge (Millimeter)","Longueur de la broche (millimètres)") ?></label
                     >
 
                     <select class="form-control" id="lunghezza" required>
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="300">300</option>
                       <option value="350">350</option>
                       <option value="400">400</option>
@@ -112,23 +112,23 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="diametro">Diametro spinotto (millimetri)</label>
+                    <label for="diametro"><? translate("Diametro spinotto (millimetri)", "Stiftdurchmesser (mm)","Diamètre de la broche (mm)") ?></label>
 
                     <select class="form-control" id="diametro" required>
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="20">20</option>
                       <option value="altro"
-                        >Altro (specifica in informazioni aggiuntive)</option
+                        ><? translate("Altro (specifica in informazioni aggiuntive)", "Sonstiges (in zusätzlichen Informationen angeben)","Autre (préciser dans les informations supplémentaires)") ?></option
                       >
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="lunghezzaguaina"
-                      >Lunghezza guaina di plastica (millimetri)</label
+                      ><? translate("Lunghezza guaina di plastica (millimetri)", "Länge der Kunststoffhülle (Millimeter)","Longueur de la gaine en plastique (millimètres)") ?></label
                     >
 
                     <select class="form-control" id="lunghezzaguaina">
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="170">170</option>
                       <option value="195">195</option>
                       <option value="220">220</option>
@@ -137,20 +137,20 @@
                   </div>
                   <div class="form-group">
                     <label for="diametroguaina"
-                      >Diametro guaina (millimetri)</label
+                      ><? translate("Diametro guaina (millimetri)", "Manteldurchmesser (mm)","Diamètre de la gaine (mm)") ?></label
                     >
 
                     <select class="form-control" id="diametroguaina">
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="22">22</option>
                       <option value="altro"
-                        >Altro (specifica in informazioni aggiuntive)</option
+                        ><? translate("Lunghezza guaina di plastica (millimetri)", "Länge der Kunststoffhülle (Millimeter)","Longueur de la gaine en plastique (millimètres)") ?></option
                       >
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="spinottispeciali"
-                      >Eventuali spinotti + guaina speciali</label
+                      ><? translate("Eventuali spinotti + guaina speciali", "Mögliche Stifte + spezielle Hülle","Epingles possibles + gaine spéciale") ?></label
                     >
                     <input
                       type="text"
@@ -161,17 +161,17 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="numeropezzi">Numero pezzi</label>
+                    <label for="numeropezzi"><? translate("Numero pezzi (o metri)", "Stückzahl (oder Meter)","Nombre de pièces (ou mètres)") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="numeropezzi"
-                      placeholder="Inserisci il numero di pezzi"
+                      placeholder="<? translate("Inserisci il numero di pezzi (o metri)", "Geben Sie die Anzahl der Teile (oder Meter) ein","Entrez le nombre de pièces (ou mètres)") ?>"
                     />
                   </div>
                   <div class="form-group">
                     <label for="cantieremagazzino"
-                      >Cantiere o magazzino per eventuale consegna</label
+                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für mögliche Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
                     >
                     <input
                       type="text"

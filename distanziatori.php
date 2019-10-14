@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <?php include "include/head.php" ?>
-    <title>Ghielmimport</title>
+    <title><? translate("Distanziatori", "Abstandshalter","Écarteurs") ?> - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
@@ -24,7 +24,7 @@
         >
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Distanziatori</h5>
+              <h5 class="modal-title"><? translate("Distanziatori", "Abstandshalter","Écarteurs") ?></h5>
               <button
                 type="button"
                 class="close"
@@ -56,7 +56,7 @@
             <i class="fas fa-bars"></i>
           </div>
           <span class="page-title d-md-block mb-2"
-            >Accessori Ferro (pronta consegna)</span
+            ><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span
           >
 
           <div class="card">
@@ -76,28 +76,28 @@
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3>Distanziatori</h3>
+                <h3><? translate("Distanziatori", "Abstandshalter","Écarteurs") ?></h3>
                 <p class="lead"></p>
                 <hr />
-                <p class="h5">Richiesta d'offerta</p>
+                <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="distanziatori">
                   <div class="form-group">
-                    <label for="piedino">Presenza piedino</label>
+                    <label for="piedino"><? translate("Presenza piedino", "Fußpräsenz","Présence de pied") ?></label>
 
                     <select class="form-control" id="piedino" required>
-                      <option selected disabled value="">Scegli</option>
-                      <option value="si">Sì</option>
-                      <option value="no">No</option>
+                    <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="SI"><? translate("Si", "Ja","Oui") ?></option>
+                      <option value="NO"><? translate("No", "Nein","Non") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="altezza">Altezza (da 4cm a 110cm)</label>
+                    <label for="altezza"><? translate("Altezza (da 4cm a 110cm)", "Höhe (von 4 cm bis 110 cm)","Hauteur (de 4cm à 110cm)") ?></label>
 
                     <input
                       type="number"
                       class="form-control"
                       id="altezza"
-                      placeholder="Inserisci l'altezza in centimetri"
+                      placeholder="<? translate("Inserisci l'altezza in centimetri", "Geben Sie die Höhe in Zentimetern ein","Entrez la hauteur en centimètres") ?>"
                       required
                       min="4"
                       max="110"
@@ -105,18 +105,18 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="numeropezzi">Numero pezzi (o metri)</label>
+                    <label for="numeropezzi"><? translate("Numero pezzi (o metri)", "Stückzahl (oder Meter)","Nombre de pièces (ou mètres)") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="numeropezzi"
-                      placeholder="Inserisci il numero di pezzi (o metri)"
+                      placeholder="<? translate("Inserisci il numero di pezzi (o metri)", "Geben Sie die Anzahl der Teile (oder Meter) ein","Entrez le nombre de pièces (ou mètres)") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
                     <label for="cantieremagazzino"
-                      >Cantiere o magazzino per eventuale consegna</label
+                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für mögliche Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
                     >
                     <input
                       type="text"
@@ -125,63 +125,7 @@
                       placeholder=""
                     />
                   </div>
-                  <p class="h3"><? translate("Informazioni di contatto","Kontaktinformationen","Informations de contact") ?></p>
-                  <hr />
-                  <div class="form-group">
-                    <label for="azienda"><? translate("Azienda","Unternehmen","Société") ?></label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="azienda"
-                      placeholder="<? translate("Inserisci la ragione sociale","Geben Sie den Firmennamen ein","Entrez le nom de l'entreprise") ?>"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="personacontatto"><? translate("Persona di contatto","Ansprechpartner","Personne de contact") ?></label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="personacontatto"
-                      placeholder="<? translate("Inserisci il nome","Geben Sie den Namen ein","Entrez le nom") ?>"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="email"><? translate("Email","Email","Email") ?></label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="<? translate("Inserisci la tua email","Geben Sie Ihre E-Mail-Adresse ein","Entrez votre email") ?>"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="telefono"><? translate("Telefono","Telefon","Téléphone") ?></label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="telefono"
-                      placeholder="<? translate("Inserisci il numero di telefono","Geben Sie die Telefonnummer ein","Entrez le numéro de téléphone") ?>"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="messaggio"><? translate("Informazioni aggiuntive","Zusätzliche Informationen","Informations complémentaires") ?></label>
-                    <textarea
-                      class="form-control"
-                      id="messaggio"
-                      rows="6"
-                    ></textarea>
-                  </div>
-                  <a
-                    href="javascript:void(0)"
-                    id="submit"
-                    class="btn btn-block btn-primary text-white mb-2"
-                  >
-                  <? translate("Invia la richiesta","Senden sie die anfrage","Envoyer la demande") ?>
-                  </a>
+                  <?php include "include/contact.php"; ?>
                 </form>
               </div>
             </div>

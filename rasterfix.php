@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <?php include "include/head.php" ?>
-    <title>Ghielmimport</title>
+    <title><? translate("Ferrofix tipo Rasterfix&reg;", "Ferrofix Typ Rasterfix&reg;","Type ferrofix Rasterfix&reg;") ?> - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
@@ -27,7 +27,7 @@
             <i class="fas fa-bars"></i>
           </div>
           <span class="page-title d-md-block mb-2"
-            >Accessori Ferro (pronta consegna)</span
+            ><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span
           >
 
           <div class="card">
@@ -49,16 +49,16 @@
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3>Ferrofix tipo Rasterfix&reg;</h3>
+                <h3><? translate("Ferrofix tipo Rasterfix&reg;", "Ferrofix Typ Rasterfix&reg;","Type ferrofix Rasterfix&reg;") ?></h3>
                 <p class="lead"></p>
                 <hr />
-                <p class="h5">Richiesta d'offerta</p>
+                <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="rasterfix">
                   <div class="form-group">
-                    <label for="altezza">Altezza (cm)</label>
+                    <label for="altezza"><? translate("Altezza (cm)", "Höhe (cm)","Hauteur (cm)") ?></label>
 
                     <select class="form-control" id="altezza" required>
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="2">2</option>
                       <option value="2.5">2.5</option>
                       <option value="3">3</option>
@@ -67,18 +67,18 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="numeropezzi">Numero pezzi (o metri)</label>
+                    <label for="numeropezzi"><? translate("Numero pezzi (o metri)", "Stückzahl (oder Meter)","Nombre de pièces (ou mètres)") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="numeropezzi"
-                      placeholder="Inserisci il numero di pezzi (o metri)"
+                      placeholder="<? translate("Inserisci il numero di pezzi (o metri)", "Geben Sie die Anzahl der Teile (oder Meter) ein","Entrez le nombre de pièces (ou mètres)") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
                     <label for="cantieremagazzino"
-                      >Cantiere o magazzino per eventuale consegna</label
+                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für mögliche Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
                     >
                     <input
                       type="text"

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <?php include "include/head.php" ?>
-    <title>Ghielmimport</title>
+    <title>FERBOX - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
@@ -28,7 +28,7 @@
         >
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">FERBOX Ferri di ripresa</h5>
+              <h5 class="modal-title"><? translate("Ferbox ferri di ripresa", "Ferbox-Schießeisen","Ferbox fers à repasser") ?></h5>
               <button
                 type="button"
                 class="close"
@@ -57,7 +57,7 @@
             <i class="fas fa-bars"></i>
           </div>
           <span class="page-title d-md-block mb-2"
-            >Accessori Ferro (pronta consegna)</span
+            ><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span
           >
 
           <div class="card">
@@ -86,34 +86,34 @@
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3>Ferbox ferri di ripresa</h3>
+                <h3><? translate("Ferbox ferri di ripresa", "Ferbox-Schießeisen","Ferbox fers à repasser") ?></h3>
                 <p class="lead"></p>
                 <hr />
-                <p class="h5">Richiesta d'offerta</p>
+                <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="ferbox">
                   <div class="form-group">
-                    <label for="tipoferbox">Tipo FERBOX</label>
+                    <label for="tipoferbox"><? translate("Tipo FERBOX", "Geben Sie FERBOX ein","Type FERBOX") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="tipoferbox"
-                      placeholder="Inserisci il tipo"
+                      placeholder="<? translate("Inserisci il tipo", "Geben Sie den Typ ein","Entrez le type") ?>"
                     />
                   </div>
                   <div class="form-group">
-                    <label for="lunghezza">Lunghezza (metri)</label>
+                    <label for="lunghezza"><? translate("Lunghezza (metri)", "Länge (Meter)","Longueur (mètres)") ?></label>
 
                     <select class="form-control" id="lunghezza" required>
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="0.80">0.80</option>
                       <option value="1.25">1.25</option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="diametro">Diametro (millimetri)</label>
+                    <label for="diametro"><? translate("Diametro (millimetri)", "Durchmesser (Millimeter)","Diamètre (millimètres)") ?></label>
 
                     <select class="form-control" id="diametro" required>
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="8">8</option>
                       <option value="10">10</option>
                       <option value="12">12</option>
@@ -121,40 +121,40 @@
                   </div>
                   <div class="form-group">
                     <label for="spessoreprimatappa"
-                      >Spessore muro 1° tappa (mm)</label
+                      ><? translate("Spessore muro 1° tappa (mm)", "Wandstärke 1. Stufe (mm)","Epaisseur de paroi 1er étage (mm)") ?></label
                     >
                     <input
                       type="text"
                       class="form-control"
                       id="spessoreprimatappa"
-                      placeholder="Inserisci lo spessore"
+                      placeholder="<? translate("Inserisci lo spessore", "Geben Sie die Dicke ein","Entrez l'épaisseur") ?>"
                     />
                   </div>
                   <div class="form-group">
                     <label for="spessoresecondatappa"
-                      >Spessore muro 2° tappa (mm)</label
+                      ><? translate("Spessore muro 2° tappa (mm)", "Wandstärke 2. Stufe (mm)","Épaisseur de paroi du 2e étage (mm)") ?></label
                     >
                     <input
                       type="text"
                       class="form-control"
                       id="spessoresecondatappa"
-                      placeholder="Inserisci lo spessore"
+                      placeholder="<? translate("Inserisci lo spessore", "Geben Sie die Dicke ein","Entrez l'épaisseur") ?>"
                     />
                   </div>
                   <div class="form-group">
                     <label for="lunghezzaancoraggio"
-                      >Lunghezza di ancoraggio (mm)</label
+                      ><? translate("Lunghezza di ancoraggio (mm)", "Verankerungslänge (mm)","Longueur d'ancrage (mm)") ?></label
                     >
                     <input
                       type="text"
                       class="form-control"
                       id="lunghezzaancoraggio"
-                      placeholder="Inserisci la lunghezza"
+                      placeholder="<? translate("Inserisci la lunghezza", "Geben Sie die Länge ein","Entrez la longueur") ?>"
                     />
                   </div>
                   <div class="form-group">
                     <label for="ferboxspeciali"
-                      >Eventuali FERBOX speciali</label
+                      ><? translate("Eventuali FERBOX speciali", "Jede spezielle FERBOX","Toute FERBOX spéciale") ?></label
                     >
                     <input
                       type="text"
@@ -164,17 +164,17 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="numeropezzi">Numero pezzi (o metri)</label>
+                    <label for="numeropezzi"><? translate("Numero pezzi (o metri)", "Stückzahl (oder Meter)","Nombre de pièces (ou mètres)") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="numeropezzi"
-                      placeholder="Inserisci il numero di pezzi (o metri)"
+                      placeholder="<? translate("Inserisci il numero di pezzi (o metri)", "Geben Sie die Anzahl der Teile (oder Meter) ein","Entrez le nombre de pièces (ou mètres)") ?>"
                     />
                   </div>
                   <div class="form-group">
                     <label for="cantieremagazzino"
-                      >Cantiere o magazzino per eventuale consegna</label
+                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für mögliche Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
                     >
                     <input
                       type="text"

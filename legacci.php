@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <?php include "include/head.php" ?>
-    <title>Ghielmimport</title>
+    <title><? translate("Legacci", "Wiretires","Wiretires") ?> - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
@@ -24,7 +24,7 @@
           <div id="sidebar-toggle">
             <i class="fas fa-bars"></i>
           </div>
-          <span class="page-title d-md-block mb-2">Accessori Ferro</span>
+          <span class="page-title d-md-block mb-2"><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span>
 
           <div class="card">
             <div class="row">
@@ -34,16 +34,16 @@
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3>Legacci</h3>
+                <h3><? translate("Legacci", "Wiretires","Wiretires") ?></h3>
                 <p class="lead"></p>
                 <hr />
-                <p class="h5">Richiesta d'offerta</p>
+                <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="drunterfix">
                   <div class="form-group">
-                    <label for="lunghezza">Lunghezza (cm)</label>
+                    <label for="lunghezza"><? translate("Lunghezza (cm)", "Länge (cm)","Longueur (cm)") ?></label>
 
                     <select class="form-control" id="altezza" required>
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="10">10</option>
                       <option value="12">12</option>
                       <option value="14">14</option>
@@ -54,18 +54,18 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="numeromazzi">Numero mazzi</label>
+                    <label for="numeromazzi"><? translate("Numero mazzi", "Anzahl der Decks","Nombre de ponts") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="numeromazzi"
-                      placeholder="Inserisci il numero di mazzi"
+                      placeholder="<? translate("Inserisci il numero di mazzi", "Geben Sie die Anzahl der Decks ein","Entrez le nombre de ponts") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
                       <label for="cantieremagazzino"
-                        >Cantiere o magazzino per eventuale consegna</label
+                        ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für mögliche Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
                       >
                       <input
                         type="text"

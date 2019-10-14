@@ -15,7 +15,7 @@
         width: 100%;
       }
     </style>
-    <title>Accessori Ferro - Ghielmimport</title>
+    <title><? translate("Accessori Ferro", "Bügeleisen-Zubehör","Accessoires de fer") ?> - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
@@ -38,7 +38,7 @@
                     <h5 class="card-title">EASYFIT</h5>
 
                     <a href="easyfit.php" class="btn btn-primary"
-                      ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
+                      ><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></a
                     >
                   </div>
                 </div>
@@ -51,10 +51,10 @@
                 </div>
                 <div class="card-body d-flex align-items-end pt-2">
                   <div class="card-content">
-                    <h5 class="card-title">Ferbox ferri di ripresa</h5>
+                    <h5 class="card-title"><? translate("Ferbox ferri di ripresa", "Ferbox-Schießeisen","Ferbox fers à repasser") ?></h5>
 
                     <a href="ferbox.php" class="btn btn-primary"
-                      ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
+                      ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre") ?></a
                     >
                   </div>
                 </div>
@@ -67,7 +67,7 @@
                 </div>
                 <div class="card-body d-flex align-items-end pt-2">
                   <div class="card-content">
-                    <h5 class="card-title">Distanziatori</h5>
+                    <h5 class="card-title"><? translate("Distanziatori", "Abstandshalter","Écarteurs") ?></h5>
                     <a href="distanziatori.php" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
                     >
@@ -82,7 +82,7 @@
                 </div>
                 <div class="card-body d-flex align-items-end pt-2">
                   <div class="card-content">
-                    <h5 class="card-title">Legacci</h5>
+                    <h5 class="card-title"><? translate("Legacci", "Wiretires","Wiretires") ?></h5>
 
                     <a href="legacci.php" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
@@ -98,7 +98,7 @@
                 </div>
                 <div class="card-body d-flex align-items-end pt-2">
                   <div class="card-content">
-                    <h5 class="card-title">Spinotti</h5>
+                    <h5 class="card-title"><? translate("Spinotti", "Jacks","Jacks") ?></h5>
 
                     <a href="spinotti.php" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
@@ -114,7 +114,7 @@
                 </div>
                 <div class="card-body d-flex align-items-end pt-2">
                   <div class="card-content">
-                    <h5 class="card-title">Ferrofix tipo Rasterfix&reg;</h5>
+                    <h5 class="card-title"><? translate("Ferrofix tipo Rasterfix&reg;", "Ferrofix Typ Rasterfix&reg;","Type ferrofix Rasterfix&reg;") ?></h5>
 
                     <a href="rasterfix.php" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
@@ -130,7 +130,7 @@
                 </div>
                 <div class="card-body d-flex align-items-end pt-2">
                   <div class="card-content">
-                    <h5 class="card-title">Ferrofix tipo Drunterfix&reg;</h5>
+                    <h5 class="card-title"><? translate("Ferrofix tipo Drunterfix&reg;", "Ferrofix Typ Drunterfix&reg;","Type ferrofix Drunterfix&reg;") ?></h5>
 
                     <a href="drunterfix.php" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anforden","Demander une offre)") ?></a
@@ -140,10 +140,7 @@
               </div>
             </div>
           </div>
-          <hr />
-          <footer>
-            <p>Copyright &copy; 2019 Ghielmimport SA</p>
-          </footer>
+          <?php include "include/footer.php" ?>
         </div>
       </div>
     </div>

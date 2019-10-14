@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <?php include "include/head.php" ?>
-    <title>Ghielmimport</title>
+    <title>EASYFIT - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
@@ -59,7 +59,7 @@
             <i class="fas fa-bars"></i>
           </div>
           <span class="page-title d-md-block mb-2"
-            >Accessori Ferro (pronta consegna)</span
+            ><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span
           >
 
           <div class="card">
@@ -111,20 +111,20 @@
                 <h3>EASYFIT</h3>
                 <p class="lead"></p>
                 <hr />
-                <p class="h5">Richiesta d'offerta</p>
+                <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="easyfit">
                   <div class="form-group">
                     <label for="sagoma"
-                      >Forma sagoma ferro
+                      ><? translate("Forma sagoma ferro", "Eisenform Silhouette","Silhouette de fer") ?>
                       <a
                         href="javascript:void(0)"
                         onclick="$('#easyfit').modal('show')"
-                        >(vedi allegato)</a
+                        ><? translate("(vedi allegato)", "(siehe Anhang)","(voir pièce jointe)") ?></a
                       ></label
                     >
 
                     <select class="form-control" id="sagoma" required>
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="MU">MU</option>
                       <option value="DMU">DMU</option>
                       <option value="ANMU">ANMU</option>
@@ -143,10 +143,10 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="diametro">Diametro ferro (millimetri)</label>
+                    <label for="diametro"><? translate("Diametro ferro (millimetri)", "Eisendurchmesser (Millimeter)","Diamètre du fer (millimètres)") ?></label>
 
                     <select class="form-control" id="diametro" required>
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="10">10</option>
                       <option value="12">12</option>
                       <option value="14">14</option>
@@ -161,18 +161,18 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="numeropezzi">Numero pezzi</label>
+                    <label for="numeropezzi"><? translate("Numero pezzi", "Stückzahl","Nombre de pièces") ?></label>
                     <input
                       type="number"
                       class="form-control"
                       id="numeropezzi"
-                      placeholder="Inserisci il numero di pezzi"
+                      placeholder="<? translate("Inserisci il numero di pezzi", "Geben Sie die Stückzahl ein","Entrez le nombre de pièces") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
                     <label for="diametropiastrine"
-                      >Diametro piastrine (millimetri)</label
+                      ><? translate("Diametro piastrine (millimetri)", "Blutplättchendurchmesser (Millimeter)","Diamètre des plaquettes (millimètres)") ?></label
                     >
 
                     <select
@@ -180,7 +180,7 @@
                       id="diametropiastrine"
                       required
                     >
-                      <option selected disabled value="">Scegli</option>
+                      <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="10">10</option>
                       <option value="12">12</option>
                       <option value="14">14</option>
@@ -196,19 +196,19 @@
                   </div>
                   <div class="form-group">
                     <label for="numeropezzipiastrine"
-                      >Numero pezzi piastrine</label
+                      ><? translate("Numero pezzi piastrine", "Anzahl der Plattenstücke","Nombre de morceaux de plaque") ?></label
                     >
                     <input
                       type="number"
                       class="form-control"
                       id="numeropezzipiastrine"
-                      placeholder="Inserisci il numero di piastrine"
+                      placeholder="<? translate("Inserisci il numero di piastrine", "Geben Sie die Anzahl der Thrombozyten ein","Entrez le nombre de plaquettes") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
                     <label for="cantieremagazzino"
-                      >Cantiere o magazzino per eventuale consegna</label
+                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für mögliche Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
                     >
                     <input
                       type="text"
