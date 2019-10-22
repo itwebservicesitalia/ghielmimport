@@ -8,6 +8,18 @@
   <body>
     <div class="wrapper">
       <?php include "include/sidebar.php" ?>
+      <div id="lightbox" class="modal">
+        <div
+          class="modal-xl modal-dialog modal-dialog-centered"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body">
+              <img class="w-100" src="" alt="" id="lightbox-modal-img" />
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="content">
       <?php include "include/modal.php" ?>
         <div class="container">
@@ -261,7 +273,26 @@
               </div>
             </div>
             <div class="col-sm px-4 mt-4">
-              <!-- <p class="h4">Certificazione ...</p> -->
+              <p class="h4">Stoccaggio Cemento Stabio</p>
+              <img
+                    class="w-100 lightbox-img"
+                    src="assets/cemento/cemento1.jpg"
+                    alt=""
+                  />
+              <ul class="lista-dati">
+                <li><b>2500t</b> di stoccaggio</li>
+                <li><b>7</b> sili</li>
+                <li><b>9</b> tipi di cemento</li>
+                <li><b>2</b> punti di carico su gomma</li>
+                <li><b>1</b> punto di carico per treni</li>
+              </ul>
+              <img
+                    class="w-100 lightbox-img"
+                    src="assets/cemento/cemento2.jpg"
+                    alt=""
+                  />
+              
+              <img class="d-block pt-3 m-auto" src="assets/logoghielmiswiss.jpg" style="width:150px" alt="Ghielmimport Swiss">
             </div>
           </div>
         </div>
