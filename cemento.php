@@ -148,7 +148,7 @@
                   </div>
                   <div class="form-group">
                     <label for="requisititecnici"
-                      ><? translate("Requisiti tecnici particolari", "Spezifische technische Anforderungen","Requisiti tecnici particolari") ?></label
+                      ><? translate("Requisiti tecnici particolari", "Spezifische technische Anforderungen","Exigences techniques spécifiques") ?></label
                     >
                     <input
                       type="text"
@@ -273,7 +273,7 @@
               </div>
             </div>
             <div class="col-sm px-4 mt-4">
-              <p class="h4">Stoccaggio Cemento Stabio</p>
+              <p class="h4">Stoccaggio cemento Stabio</p>
               <img
                     class="w-100 lightbox-img"
                     src="assets/cemento/cemento1.jpg"
