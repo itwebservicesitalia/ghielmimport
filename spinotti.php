@@ -166,7 +166,7 @@
                       type="text"
                       class="form-control"
                       id="numeropezzi"
-                      placeholder="<? translate("Inserisci il numero di pezzi (o metri)", "Geben Sie die Anzahl  (oder Meter) ein","Entrez le nombre de pièces (ou mètres)") ?>"
+                      placeholder="<? translate("Inserisci il numero di pezzi", "Geben Sie die Anzahl ein","Entrez le nombre de pièces") ?>"
                     />
                   </div>
                   <div class="form-group">
