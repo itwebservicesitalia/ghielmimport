@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <?php include "include/head.php" ?>
-    <title>Ferro - Ghielmimport</title>
+    <title><? translate("Ferro", "Angebot","Fer") ?> - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
@@ -138,7 +138,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="cantiereacquisito"><? translate("Cantiere Acquisito", "Erworbene Baustelle","Acquisition du chantier") ?></label>
+                    <label for="cantiereacquisito"><? translate("Cantiere Acquisito", "Baustelle Erworben","Acquisition du chantier") ?></label>
                     <select class="form-control" id="cantiereacquisito">
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="SI"><? translate("Si", "Ja","Oui") ?></option>
@@ -153,11 +153,11 @@
                     <select class="form-control" id="mezziaccesso">
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="assi2"
-                        ><? translate("2 Assi (Solo per Canton Ticino)", "2 Äxte (nur für Kanton Tessin)","2 axes (uniquement pour le canton du Tessin)") ?></option
+                        ><? translate("2 Assi (Solo per Canton Ticino)", "2-Achser LKW (nur für Kanton Tessin)","2 Axes (uniquement pour le canton du Tessin)") ?></option
                       >
-                      <option value="assi3"><? translate("3 Assi", "3 Asse","3 As") ?></option>
-                      <option value="assi4"><? translate("4 Assi", "4 Asse","4 As") ?></option>
-                      <option value="bilico"><? translate("Bilico", "Der Rest","Equilibre") ?></option>
+                      <option value="assi3"><? translate("3 Assi", "3-Achser LKW","3 Axes") ?></option>
+                      <option value="assi4"><? translate("4 Assi", "4-Achser LKW","4 Axes") ?></option>
+                      <option value="bilico"><? translate("Bilico", "Sattelschlepper","Semi") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
@@ -180,7 +180,7 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="datainizio"><? translate("Data inizio cantiere", "Baustellenstartdatum","Date de début du chantier") ?></label>
+                    <label for="datainizio"><? translate("Data inizio cantiere", "Baustellenstartdatum","Début du chantier") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -210,7 +210,7 @@
                     </div>
                   </div>
                   <div class="form-group">
-                    <label for="disegni"><? translate("Allega disegni (Massimo 10MB)", "Zeichnungen anhängen (maximal 10 MB)","Joindre des dessins (maximum 10 Mo)") ?></label>
+                    <label for="disegni"><? translate("Allega disegni (Massimo 10MB)", "Zeichnungen anhängen (maximal 10 MB)","Joindre les dessins (maximum 10 Mo)") ?></label>
                     <div class="input-group mb-3">
                       <div class="custom-file">
                         <input
@@ -229,7 +229,7 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="tipologiacantiere"><? translate("Tipologia cantiere", "Baustellentypologie","J'étudie en génie civil") ?></label>
+                    <label for="tipologiacantiere"><? translate("Tipologia cantiere", "Baustellentypologie","Type du chantier") ?></label>
                     <select class="form-control" id="tipologiacantiere">
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="residenziale"><? translate("Residenziale", "Wohn","Rèsidentiel") ?></option>
@@ -277,7 +277,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="ingegnere"><? translate("Studio ingegneria civile", "Ich studiere Bauingenieurwesen","J'étudie en génie civil") ?></label>
+                    <label for="ingegnere"><? translate("Studio ingegneria civile", "Ingenierurbüro","Bureau ingénieur civil") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -290,9 +290,9 @@
                     <select class="form-control" id="tipofornitura">
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="fornitura"
-                        ><? translate("Fornitura (con posa effettuata dall'impresa)", "Lieferung (bei Installation durch die Firma)","Fourniture (avec installation rèalisèe par l'enterprise)") ?></option
+                        ><? translate("Fornitura (con posa effettuata dall'impresa)", "Lieferung (verlegung durch die Firma)","Fourniture (pose de la ferraillage par l'enterprise)") ?></option
                       >
-                      <option value="altro"><? translate("Altro, specificare in informazioni aggiuntive","Anderes, in zusätzlichen Informationen angeben","Autre, précisez dans les informations supplémentaires") ?></option>
+                      <option value="altro"><? translate("Altro, specificare in informazioni aggiuntive","Anderes, in zusätzliche Informationen angeben","Autre, informations spécifiez dans supplémentaires") ?></option>
                     </select>
                   </div>
                   <?php include "include/contact.php"; ?>
@@ -315,7 +315,7 @@
                 materiale omologato per la Svizzera. Ghielmimport rispetta i
                 requisiti di mandrinatura dettati dalla normativa SIA 262; nel
                 programma di rilevamento delle liste ferro sono impostati i
-                raggi corretti per ogni diametro e sagoma.", "Das Ghielmimport-Werk zur Umformung von Eisen für Stahlbeton ist EMPA-zertifiziert und verwendet ausschliesslich für die Schweiz zugelassenes Material. Ghielmimport respektiert die Erweiterungsanforderungen der SIA 262-Verordnung. im eisenlistenerkennungsprogramm werden für jeden durchmesser und jede form die richtigen radien eingestellt.","L'usine de façonnage du fer pour béton armé de Ghielmimport est certifiée EMPA et utilise exclusivement des matériaux approuvés pour la Suisse. Ghielmimport respecte les exigences d'extension imposées par le règlement SIA 262; dans le programme de détection de liste de fer, les rayons corrects sont définis pour chaque diamètre et forme.") ?>
+                raggi corretti per ogni diametro e sagoma.", "Das Ghielmimport-Werk zur Umformung von Eisen für Stahlbeton ist EMPA-zertifiziert und verwendet ausschliesslich für die Schweiz zugelassenes Material. Ghielmimport respektiert die Erweiterungsanforderungen der SIA 262-Verordnung. Im eisenlistenerkennungsprogramm werden für jeden durchmesser und jede form die richtigen radien eingestellt.","L'usine de façonnage du fer pour béton armé de Ghielmimport est certifiée EMPA et utilise exclusivement des matériaux approuvés pour la Suisse. Ghielmimport respecte les exigences d'extension imposées par le règlement SIA 262; dans le programme de détection de liste de fer, les rayons corrects sont définis pour chaque diamètre et forme.") ?>
               </p>
               <p class="h4"><? translate("Registro ferriere certificate","Register der zertifizierten Eisenwerke","Registre des forges certifiées") ?></p>
               <div class="img-portfolio">

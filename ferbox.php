@@ -28,7 +28,7 @@
         >
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title"><? translate("Ferbox ferri di ripresa", "Ferbox-Schießeisen","Ferbox fers à repasser") ?></h5>
+              <h5 class="modal-title"><? translate("Ferbox ferri di ripresa", "Ferbox Armierungs anschluss","Ferbox raccorderents d'armatures") ?></h5>
               <button
                 type="button"
                 class="close"
@@ -57,7 +57,7 @@
             <i class="fas fa-bars"></i>
           </div>
           <span class="page-title d-md-block mb-2"
-            ><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span
+            ><? translate("Accessori Ferro (pronta consegna)", "Stahl Zubehöre (zur Auslieferung bereit)","Accessoires de fer (prêt à être livré)") ?></span
           >
 
           <div class="card">
@@ -86,7 +86,7 @@
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3><? translate("Ferbox ferri di ripresa", "Ferbox-Schießeisen","Ferbox fers à repasser") ?></h3>
+                <h3><? translate("Ferbox ferri di ripresa", "Ferbox Armierungs anschluss","Ferbox raccorderents d'armatures") ?></h3>
                 <p class="lead"></p>
                 <hr />
                 <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
@@ -97,7 +97,7 @@
                       type="text"
                       class="form-control"
                       id="tipoferbox"
-                      placeholder="<? translate("Inserisci il tipo", "Geben Sie den Typ ein","Entrez le type") ?>"
+                      placeholder="<? translate("Inserisci il tipo", "Schreiben Sie den Typ","Entrez le type") ?>"
                     />
                   </div>
                   <div class="form-group">
@@ -121,7 +121,7 @@
                   </div>
                   <div class="form-group">
                     <label for="spessoreprimatappa"
-                      ><? translate("Spessore muro 1° tappa (mm)", "Wandstärke 1. Stufe (mm)","Epaisseur de paroi 1er étage (mm)") ?></label
+                      ><? translate("Spessore muro 1° tappa (mm)", "Wanddicke 1. Etappe (mm)","Epaisseur de paroi 1er étage (mm)") ?></label
                     >
                     <input
                       type="text"
@@ -132,7 +132,7 @@
                   </div>
                   <div class="form-group">
                     <label for="spessoresecondatappa"
-                      ><? translate("Spessore muro 2° tappa (mm)", "Wandstärke 2. Stufe (mm)","Épaisseur de paroi du 2e étage (mm)") ?></label
+                      ><? translate("Spessore muro 2° tappa (mm)", "Wanddicke 2. Etappe (mm)","Épaisseur de paroi du 2e étage (mm)") ?></label
                     >
                     <input
                       type="text"
@@ -154,7 +154,7 @@
                   </div>
                   <div class="form-group">
                     <label for="ferboxspeciali"
-                      ><? translate("Eventuali FERBOX speciali", "Jede spezielle FERBOX","Toute FERBOX spéciale") ?></label
+                      ><? translate("Eventuali FERBOX speciali", "Eventuelle spezielle FERBOX","Toute FERBOX spécial") ?></label
                     >
                     <input
                       type="text"
@@ -169,12 +169,12 @@
                       type="text"
                       class="form-control"
                       id="numeropezzi"
-                      placeholder="<? translate("Inserisci il numero di pezzi (o metri)", "Geben Sie die Anzahl der Teile (oder Meter) ein","Entrez le nombre de pièces (ou mètres)") ?>"
+                      placeholder="<? translate("Inserisci il numero di pezzi (o metri)", "Geben Sie die Anzahl  (oder Meter) ein","Entrez le nombre de pièces (ou mètres)") ?>"
                     />
                   </div>
                   <div class="form-group">
                     <label for="cantieremagazzino"
-                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für mögliche Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
+                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für eventuelle Lieferung","Chantier de construction ou entrepôt pour livraison") ?></label
                     >
                     <input
                       type="text"

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <?php include "include/head.php" ?>
-    <title><? translate("Legacci", "Wiretires","Wiretires") ?> - Ghielmimport</title>
+    <title><? translate("Legacci", "Drahtbinder","Wiretires") ?> - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
@@ -24,7 +24,7 @@
           <div id="sidebar-toggle">
             <i class="fas fa-bars"></i>
           </div>
-          <span class="page-title d-md-block mb-2"><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span>
+          <span class="page-title d-md-block mb-2"><? translate("Accessori Ferro (pronta consegna)", "Stahl Zubehöre (zur Auslieferung bereit)","Accessoires de fer (prêt à être livré)") ?></span>
 
           <div class="card">
             <div class="row">
@@ -34,7 +34,7 @@
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3><? translate("Legacci", "Wiretires","Wiretires") ?></h3>
+                <h3><? translate("Legacci", "Drahtbinder","Ligature à béton") ?></h3>
                 <p class="lead"></p>
                 <hr />
                 <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
@@ -54,18 +54,18 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="numeromazzi"><? translate("Numero mazzi", "Anzahl der Decks","Nombre de ponts") ?></label>
+                    <label for="numeromazzi"><? translate("Numero mazzi", "Anzahl der Bund","Nombre de botte") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="numeromazzi"
-                      placeholder="<? translate("Inserisci il numero di mazzi", "Geben Sie die Anzahl der Decks ein","Entrez le nombre de ponts") ?>"
+                      placeholder="<? translate("Inserisci il numero di mazzi", "Geben Sie die Anzahl der Bund ein","Entrez le nombre de botte") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
                       <label for="cantieremagazzino"
-                        ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für mögliche Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
+                        ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für eventuelle Lieferung","Chantier de construction ou entrepôt pour livraison") ?></label
                       >
                       <input
                         type="text"

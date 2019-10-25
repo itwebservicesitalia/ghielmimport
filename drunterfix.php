@@ -27,7 +27,7 @@
             <i class="fas fa-bars"></i>
           </div>
           <span class="page-title d-md-block mb-2"
-            ><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span
+            ><? translate("Accessori Ferro (pronta consegna)", "Stahl Zubehöre (zur Auslieferung bereit)","Accessoires de fer (prêt à être livré)") ?></span
           >
 
           <div class="card">
@@ -78,7 +78,7 @@
                   </div>
                   <div class="form-group">
                     <label for="cantieremagazzino"
-                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für mögliche Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
+                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für eventuelle Lieferung","Chantier de construction ou entrepôt pour livraison") ?></label
                     >
                     <input
                       type="text"

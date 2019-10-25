@@ -31,7 +31,7 @@
                   <i class="fas fa-bars"></i>
                 </div>
                 <span class="page-title"
-                  ><? translate("Modulo richiesta di offerta Accessori Ferro (speciali)", "Anfrageformular für Eisen Angebot (spezial)","Formulaire de demande d'offre Fer (special)") ?></span
+                  ><? translate("Modulo richiesta di offerta Accessori Ferro (speciali)", "Anfrageformular für Eisen (spezial)","Formulaire de demande d'offre Fer (special)") ?></span
                 >
                 <hr />
                 <form id="accessoriferrospeciali">
@@ -139,7 +139,7 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="ingegnere"><? translate("Studio ingegneria civile", "Ich studiere Bauingenieurwesen","J'étudie en génie civil") ?></label>
+                    <label for="ingegnere"><? translate("Studio ingegneria civile", "Ingenieurbüro","Bureau ingénieur civil") ?></label>
                     <input
                       type="text"
                       class="form-control"

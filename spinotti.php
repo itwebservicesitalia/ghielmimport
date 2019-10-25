@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <?php include "include/head.php" ?>
-    <title><? translate("Spinotti", "Jacks","Jacks") ?> - Ghielmimport</title>
+    <title><? translate("Spinotti", "Schubdorne","Jacks") ?> - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
@@ -28,7 +28,7 @@
         >
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title"><? translate("Spinotti", "Jacks","Jacks") ?></h5>
+              <h5 class="modal-title"><? translate("Spinotti", "Schubdorne","Jacks") ?></h5>
               <button
                 type="button"
                 class="close"
@@ -59,7 +59,7 @@
             <i class="fas fa-bars"></i>
           </div>
           <span class="page-title d-md-block mb-2"
-            ><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span
+            ><? translate("Accessori Ferro (pronta consegna)", "Stahl Zubehöre (zur Auslieferung bereit)","Accessoires de fer (prêt à être livré)") ?></span
           >
 
           <div class="card">
@@ -83,13 +83,13 @@
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3><? translate("Spinotti", "Jacks","Jacks") ?></h3>
+                <h3><? translate("Spinotti", "Schubdorne","Goujons") ?></h3>
                 <p class="lead"></p>
                 <hr />
                 <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="spinotti">
                   <div class="form-group">
-                    <label for="tipospinotto"><? translate("Tipo Spinotto", "Steckertyp","Type de prise") ?></label>
+                    <label for="tipospinotto"><? translate("Tipo Spinotto", "Schubdorne Typ","Type de goujon") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -100,7 +100,7 @@
                   </div>
                   <div class="form-group">
                     <label for="lunghezza"
-                      ><? translate("Lunghezza spinotto (millimetri)", "Stiftlänge (Millimeter)","Longueur de la broche (millimètres)") ?></label
+                      ><? translate("Lunghezza spinotto (millimetri)", "Schubdornlänge (Millimeter)","Longueur du goujon (millimètres)") ?></label
                     >
 
                     <select class="form-control" id="lunghezza" required>
@@ -112,7 +112,7 @@
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="diametro"><? translate("Diametro spinotto (millimetri)", "Stiftdurchmesser (mm)","Diamètre de la broche (mm)") ?></label>
+                    <label for="diametro"><? translate("Diametro spinotto (millimetri)", "Schubdorndurchmesser (mm)","Diamètre du goujon (mm)") ?></label>
 
                     <select class="form-control" id="diametro" required>
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
@@ -124,7 +124,7 @@
                   </div>
                   <div class="form-group">
                     <label for="lunghezzaguaina"
-                      ><? translate("Lunghezza guaina di plastica (millimetri)", "Länge der Kunststoffhülle (Millimeter)","Longueur de la gaine en plastique (millimètres)") ?></label
+                      ><? translate("Lunghezza guaina di plastica (millimetri)", "Länge der Kunststoffhülse (Millimeter)","Longueur de la gaine en plastique (millimètres)") ?></label
                     >
 
                     <select class="form-control" id="lunghezzaguaina">
@@ -137,7 +137,7 @@
                   </div>
                   <div class="form-group">
                     <label for="diametroguaina"
-                      ><? translate("Diametro guaina (millimetri)", "Manteldurchmesser (mm)","Diamètre de la gaine (mm)") ?></label
+                      ><? translate("Diametro guaina (millimetri)", "Hülsedurchmesser (mm)","Diamètre de la gaine (mm)") ?></label
                     >
 
                     <select class="form-control" id="diametroguaina">
@@ -150,7 +150,7 @@
                   </div>
                   <div class="form-group">
                     <label for="spinottispeciali"
-                      ><? translate("Eventuali spinotti + guaina speciali", "Mögliche Stifte + spezielle Hülle","Epingles possibles + gaine spéciale") ?></label
+                      ><? translate("Eventuali spinotti + guaina speciali", "Eventuelle Schubdorne + Hüsen spezielle","Goujons + gaines spéciales") ?></label
                     >
                     <input
                       type="text"
@@ -161,17 +161,17 @@
                   </div>
 
                   <div class="form-group">
-                    <label for="numeropezzi"><? translate("Numero pezzi (o metri)", "Stückzahl (oder Meter)","Nombre de pièces (ou mètres)") ?></label>
+                    <label for="numeropezzi"><? translate("Numero pezzi", "Stückzahl","Nombre de pièces") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="numeropezzi"
-                      placeholder="<? translate("Inserisci il numero di pezzi (o metri)", "Geben Sie die Anzahl der Teile (oder Meter) ein","Entrez le nombre de pièces (ou mètres)") ?>"
+                      placeholder="<? translate("Inserisci il numero di pezzi (o metri)", "Geben Sie die Anzahl  (oder Meter) ein","Entrez le nombre de pièces (ou mètres)") ?>"
                     />
                   </div>
                   <div class="form-group">
                     <label for="cantieremagazzino"
-                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für mögliche Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
+                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für eventuelle Lieferung","Chantier de construction ou entrepôt pour livraison") ?></label
                     >
                     <input
                       type="text"

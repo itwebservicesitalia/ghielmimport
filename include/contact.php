@@ -1,7 +1,7 @@
 <p class="h3"><? translate("Informazioni di contatto","Kontaktinformationen","Informations de contact") ?></p>
                   <hr />
                   <div class="form-group">
-                    <label for="azienda"><? translate("Azienda","Unternehmen","Société") ?></label>
+                    <label for="azienda"><? translate("Azienda","Unternehmen","Entreprise") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -53,5 +53,5 @@
                     id="submit"
                     class="btn btn-block btn-primary text-white mb-2"
                   >
-                  <? translate("Invia la richiesta","Senden sie die anfrage","Envoyer la demande") ?>
+                  <? translate("Invia la richiesta","Angebotanfrage senden","Envoyer la demande") ?>
                   </a>

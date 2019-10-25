@@ -3,7 +3,7 @@
   <head>
     <?php include "include/head.php" ?>
 
-    <title>Cemento - Ghielmimport</title>
+    <title><? translate("Cemento","Zement","Ciment") ?> - Ghielmimport</title>
   </head>
   <body>
     <div class="wrapper">
@@ -30,7 +30,7 @@
                   <i class="fas fa-bars"></i>
                 </div>
                 <span class="page-title"
-                  ><? translate("Modulo richiesta di offerta cemento","Antragsformular für Zementangebot","Formulaire de demande d'offre de ciment") ?></span
+                  ><? translate("Modulo richiesta di offerta cemento","Anfrageformular für Zement","Formulaire de demande d'offre de ciment") ?></span
                 >
                 <hr />
                 <form id="cemento">
@@ -42,17 +42,17 @@
                       type="text"
                       class="form-control"
                       id="denominazionecantiere"
-                      placeholder="<? translate("Inserisci il nome del cantiere","Geben Sie den Namen des Hofes ein","Entrez le nom de la cour") ?>"
+                      placeholder="<? translate("Inserisci il nome del cantiere","Geben Sie den Namen de Baustelle ein","Entrez le nom du chantier") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
-                    <label for="cantiere"><? translate("Ubicazione cantiere","Standort der Site","Emplacement du site") ?></label>
+                    <label for="cantiere"><? translate("Ubicazione cantiere","Standort der Baustelle","Emplacement du site") ?></label>
                     <input
                       type="text"
                       class="form-control"
                       id="cantiere"
-                      placeholder="<? translate("Inserisci il luogo e il CAP","Entrez le lieu et le code postal","Entrez le lieu et le code postal") ?>"
+                      placeholder="<? translate("Inserisci il luogo e il CAP","Geben Sie den Ort und die Postleitzahl ein","Entrez lieu et code postal") ?>"
                       required
                     />
                   </div>
@@ -67,7 +67,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="cantiereacquisito"><? translate("Cantiere Acquisito","Erworbene Baustelle","Acquisition du chantier") ?></label>
+                    <label for="cantiereacquisito"><? translate("Cantiere Acquisito","Baustelle Erworben","Acquisition du chantier") ?></label>
                     <select
                       class="form-control"
                       id="cantiereacquisito"
@@ -82,15 +82,15 @@
                     <label for="tipofornitura"><? translate("Tipologia fornitura", "Versorgungsart","Type d'approvisionnement") ?></label>
                     <select class="form-control" id="tipofornitura" required>
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
-                      <option value="sfuso"><? translate("Sfuso", "Masse","Masse") ?></option>
-                      <option value="sacco"><? translate("Sacco", "Sacco","Sacco") ?></option>
+                      <option value="sfuso"><? translate("Sfuso", "Lose","Viac") ?></option>
+                      <option value="sacco"><? translate("Sacco", "Sack","Sac") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="tipocemento"><? translate("Tipologia cemento", "Zement typ","Type de ciment") ?></label>
                     <select class="form-control" id="tipocemento" required>
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
-                      <option disabled value=""><? translate("SFUSO", "MASSE","MASSE") ?></option>
+                      <option disabled value=""><? translate("SFUSO", "LOSEZEMENT","CIMENT EN VIAC") ?></option>
                       <option value="Cem II B-LL 32,5 R SFUSO"
                         >Cem II B-LL 32,5 R</option
                       >
@@ -117,7 +117,7 @@
                       <option value="Cem II B-LL  42,5 R Bianco SFUSO"
                         >Cem II B-LL 42,5 R Bianco</option
                       >
-                      <option disabled value=""><? translate("SACCO", "SACCO","SACCO") ?></option>
+                      <option disabled value=""><? translate("SACCO", "SACKZEMENT","CIMENT EN SAC") ?></option>
                       <option value="Cem II B-LL 32,5 R SACCO"
                         >Cem II B-LL 32,5 R</option
                       >
@@ -148,7 +148,7 @@
                   </div>
                   <div class="form-group">
                     <label for="requisititecnici"
-                      ><? translate("Requisiti tecnici particolari", "Spezifische technische Anforderungen","Exigences techniques spécifiques") ?></label
+                      ><? translate("Requisiti tecnici particolari", "Spezifische technische Anforderungen","Exigences techniques spéciales") ?></label
                     >
                     <input
                       type="text"
@@ -159,9 +159,9 @@
                   </div>
                   <div class="form-group">
                     <label for="mezziaccessogomma"
-                      ><b><? translate("CONSEGNA SU GOMMA:", "GUMMILIEFERUNG:","LIVRAISON DE CAOUTCHOUC:") ?></b><br />
+                      ><b><? translate("CONSEGNA SU GOMMA:", "STRASSENTRANSPORT:","TRANSPORT ROUTIER:") ?></b><br />
                       <? translate("Tipologia di mezzo delle massime dimensioni possibili che
-                      può accedere al cantiere", "Fahrzeugtyp mit den maximal möglichen Abmessungen, die auf den Hof zugreifen können","Type de véhicule aux dimensions maximales possibles pouvant accéder au chantier") ?></label
+                      può accedere al cantiere", "Fahrzeugtyp mit den maximal möglichen Abmessungen, die auf der Baustelle zugreifen können","Type de véhicule aux dimensions maximales que le chantier peut attendre") ?></label
                     >
                     <select
                       class="form-control"
@@ -170,17 +170,17 @@
                     >
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="assi2"
-                        ><? translate("2 Assi (Solo per Canton Ticino)", "2 Äxte (nur für Kanton Tessin)","2 axes (uniquement pour le canton du Tessin)") ?></option
+                        ><? translate("2 Assi (Solo per Canton Ticino)", "2-Achsiger (nur für Kanton Tessin)","2 axes (uniquement pour le canton du Tessin)") ?></option
                       >
-                      <option value="assi3"><? translate("3 Assi", "3 Asse","3 As") ?></option>
-                      <option value="assi4"><? translate("4 Assi", "4 Asse","4 As") ?></option>
-                      <option value="bilico"><? translate("Bilico", "Der Rest","Equilibre") ?></option>
+                      <option value="assi3"><? translate("3 Assi", "3-Achsiger","3 As") ?></option>
+                      <option value="assi4"><? translate("4 Assi", "4-Achsiger","4 As") ?></option>
+                      <option value="bilico"><? translate("Bilico", "Satterschlepper","Equilibre") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="mezziaccessotreno"
-                      ><b><? translate("CONSEGNA CON TRENO:", "LIEFERUNG MIT DER BAHN:","LIVRAISON EN TRAIN:") ?></b><br />
-                      <? translate("Dotazione raccordo ferroviario", "Eisenbahnknotenpunkt","Carrefour") ?></label
+                      ><b><? translate("CONSEGNA CON TRENO:", "LIEFERUNG DER BAHN:","LIVRAISON PAR TRAIN:") ?></b><br />
+                      <? translate("Dotazione raccordo ferroviario", "Eisenbahnverbindung - Schienenverbindung","Liaison ferroviaire") ?></label
                     >
                     <select
                       class="form-control"
@@ -204,7 +204,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="datainizio"><? translate("Data inizio cantiere", "Baustellenstartdatum","Date de début du chantier") ?></label>
+                    <label for="datainizio"><? translate("Data inizio cantiere", "Baustellenstartdatum","Début du chantier") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -214,7 +214,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="datafine"><? translate("Data presunta fine cantiere", "Voraussichtliches Ende der Baustelle","Fin présumée du chantier") ?></label>
+                    <label for="datafine"><? translate("Data presunta fine cantiere", "Voraussichtliches Ende der Baustelle","Fin préme du chantier") ?></label>
                     <input
                       type="text"
                       class="form-control"
@@ -224,7 +224,7 @@
                     />
                   </div>
                   <div class="form-group">
-                    <label for="tipologiacantiere"><? translate("Tipologia cantiere", "Baustellentypologie","J'étudie en génie civil") ?></label>
+                    <label for="tipologiacantiere"><? translate("Tipologia cantiere", "Baustellentypologie","Typologie de chantier") ?></label>
                     <select
                       class="form-control"
                       id="tipologiacantiere"
@@ -235,7 +235,7 @@
                       <option value="commercialeindustriale"
                         ><? translate("Commerciale/Industriale", "Gewerbe / Industrie","Commercial/Industriel") ?></option
                       >
-                      <option value="geniocivile"><? translate("Genio Civile", "Bauingenieure","Ingènieurs civils") ?></option>
+                      <option value="geniocivile"><? translate("Genio Civile", "Tiefbau","Genie civil") ?></option>
                       <option value="altro"><? translate("Altro", "Andere","Autre") ?></option>
                     </select>
                   </div>

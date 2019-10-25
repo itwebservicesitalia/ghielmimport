@@ -59,7 +59,7 @@
             <i class="fas fa-bars"></i>
           </div>
           <span class="page-title d-md-block mb-2"
-            ><? translate("Accessori Ferro (pronta consegna)", "Bügeleisen-Zubehör (schnelle Lieferung)","Accessoires de fer (livraison rapide)") ?></span
+            ><? translate("Accessori Ferro (pronta consegna)", "Stahl Zubehöre (zur Auslieferung bereit)","Accessoires de fer (prêt à être livré)") ?></span
           >
 
           <div class="card">
@@ -115,7 +115,7 @@
                 <form id="easyfit">
                   <div class="form-group">
                     <label for="sagoma"
-                      ><? translate("Forma sagoma ferro", "Eisenform Silhouette","Silhouette de fer") ?>
+                      ><? translate("Forma sagoma ferro", "Eisenform","Forme de fer") ?>
                       <a
                         href="javascript:void(0)"
                         onclick="$('#easyfit').modal('show')"
@@ -172,7 +172,7 @@
                   </div>
                   <div class="form-group">
                     <label for="diametropiastrine"
-                      ><? translate("Diametro piastrine (millimetri)", "Blutplättchendurchmesser (Millimeter)","Diamètre des plaquettes (millimètres)") ?></label
+                      ><? translate("Diametro piastrine (millimetri)", "Nageltellerdurchmesser (Millimeter)","Diamètre des plaquettes (millimètres)") ?></label
                     >
 
                     <select
@@ -196,19 +196,19 @@
                   </div>
                   <div class="form-group">
                     <label for="numeropezzipiastrine"
-                      ><? translate("Numero pezzi piastrine", "Anzahl der Plattenstücke","Nombre de morceaux de plaque") ?></label
+                      ><? translate("Numero pezzi piastrine", "Anzahl Nagelteller","Nombre de pièces de plaquette") ?></label
                     >
                     <input
                       type="number"
                       class="form-control"
                       id="numeropezzipiastrine"
-                      placeholder="<? translate("Inserisci il numero di piastrine", "Geben Sie die Anzahl der Thrombozyten ein","Entrez le nombre de plaquettes") ?>"
+                      placeholder="<? translate("Inserisci il numero di piastrine", "Geben Sie die Anzahl","Entrez le nombre de plaquettes") ?>"
                       required
                     />
                   </div>
                   <div class="form-group">
                     <label for="cantieremagazzino"
-                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für mögliche Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
+                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für eventuelle Lieferung","Chantier de construction ou entrepôt pour livraison") ?></label
                     >
                     <input
                       type="text"
