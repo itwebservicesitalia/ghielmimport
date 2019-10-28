@@ -174,7 +174,7 @@
                       >
                       <option value="assi3"><? translate("3 Assi", "3-Achsiger","3 Axes") ?></option>
                       <option value="assi4"><? translate("4 Assi", "4-Achsiger","4 Axes") ?></option>
-                      <option value="bilico"><? translate("Bilico", "Satterschlepper","Semi-remorque") ?></option>
+                      <option value="bilico"><? translate("Bilico", "Sattelsclepper","Semi-remorque") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
