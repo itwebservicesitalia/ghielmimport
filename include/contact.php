@@ -53,5 +53,5 @@
                     id="submit"
                     class="btn btn-block btn-primary text-white mb-2"
                   >
-                  <? translate("Invia la richiesta","Angebotsanfrage","Envoyer la demande") ?>
+                  <? translate("Invia la richiesta","Angebotsanfrage senden","Envoyer la demande") ?>
                   </a>

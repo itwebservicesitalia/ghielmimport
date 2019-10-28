@@ -236,7 +236,7 @@
                       <option value="commercialeindustriale"
                         ><? translate("Commerciale/Industriale", "Gewerbe / Industrie","Commercial/Industriel") ?></option
                       >
-                      <option value="geniocivile"><? translate("Genio Civile", "Bauingenieure","Ingènieurs civils") ?></option>
+                      <option value="geniocivile"><? translate("Genio Civile", "Tiefbau","Ingènieurs civils") ?></option>
                       <option value="altro"><? translate("Altro", "Andere","Autre") ?></option>
                     </select>
                   </div>
