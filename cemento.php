@@ -42,7 +42,7 @@
                       type="text"
                       class="form-control"
                       id="denominazionecantiere"
-                      placeholder="<? translate("Inserisci il nome del cantiere","Geben Sie den Namen de Baustelle ein","Entrez le nom du chantier") ?>"
+                      placeholder="<? translate("Inserisci il nome del cantiere","Geben Sie den Namen der Baustelle ein","Entrez le nom du chantier") ?>"
                       required
                     />
                   </div>
@@ -82,7 +82,7 @@
                     <label for="tipofornitura"><? translate("Tipologia fornitura", "Versorgungsart","Type d'approvisionnement") ?></label>
                     <select class="form-control" id="tipofornitura" required>
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
-                      <option value="sfuso"><? translate("Sfuso", "Lose","Viac") ?></option>
+                      <option value="sfuso"><? translate("Sfuso", "Lose","Vrac") ?></option>
                       <option value="sacco"><? translate("Sacco", "Sack","Sac") ?></option>
                     </select>
                   </div>
@@ -112,10 +112,10 @@
                         >Cem IV A-V 42,5 R</option
                       >
                       <option value="Cem I 52,5 R Bianco SFUSO"
-                        >Cem I 52,5 R Bianco</option
+                        >Cem I 52,5 R <? translate("Bianco", "Weiss","Blanc") ?></option
                       >
                       <option value="Cem II B-LL  42,5 R Bianco SFUSO"
-                        >Cem II B-LL 42,5 R Bianco</option
+                        >Cem II B-LL 42,5 R <? translate("Bianco", "Weiss","Blanc") ?></option
                       >
                       <option disabled value=""><? translate("SACCO", "SACKZEMENT","CIMENT EN SAC") ?></option>
                       <option value="Cem II B-LL 32,5 R SACCO"
@@ -136,13 +136,13 @@
                         >Cem IV B-P 32,5 N</option
                       >
                       <option value="Cem I 52,5 R Bianco SACCO"
-                        >Cem I 52,5 R Bianco</option
+                        >Cem I 52,5 R <? translate("Bianco", "Weiss","Blanc") ?></option
                       >
                       <option value="Cem II B-LL  42,5 R Bianco SACCO"
-                        >Cem II B-LL 42,5 R Bianco</option
+                        >Cem II B-LL 42,5 R <? translate("Bianco", "Weiss","Blanc") ?></option
                       >
                       <option value="Cem II B-LL  32,5 R Bianco SACCO"
-                        >Cem II B-LL 32,5 R Bianco</option
+                        >Cem II B-LL 32,5 R <? translate("Bianco", "Weiss","Blanc") ?></option
                       >
                     </select>
                   </div>
@@ -161,7 +161,7 @@
                     <label for="mezziaccessogomma"
                       ><b><? translate("CONSEGNA SU GOMMA:", "STRASSENTRANSPORT:","TRANSPORT ROUTIER:") ?></b><br />
                       <? translate("Tipologia di mezzo delle massime dimensioni possibili che
-                      può accedere al cantiere", "Fahrzeugtyp mit den maximal möglichen Abmessungen, die auf der Baustelle zugreifen können","Type de véhicule aux dimensions maximales que le chantier peut attendre") ?></label
+                      può accedere al cantiere", "Fahrzeugtyp mit den maximal möglichen Abmessungen, die auf der Baustelle zugreifen können","Type de véhicule aux dimensions maximales possibles que le chantier peut attendre") ?></label
                     >
                     <select
                       class="form-control"
@@ -170,11 +170,11 @@
                     >
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="assi2"
-                        ><? translate("2 Assi (Solo per Canton Ticino)", "2-Achsiger (nur für Kanton Tessin)","2 axes (uniquement pour le canton du Tessin)") ?></option
+                        ><? translate("2 Assi (Solo per Canton Ticino)", "2-Achsiger (nur für Kanton Tessin)","2 Axes (uniquement pour le canton du Tessin)") ?></option
                       >
-                      <option value="assi3"><? translate("3 Assi", "3-Achsiger","3 As") ?></option>
-                      <option value="assi4"><? translate("4 Assi", "4-Achsiger","4 As") ?></option>
-                      <option value="bilico"><? translate("Bilico", "Satterschlepper","Equilibre") ?></option>
+                      <option value="assi3"><? translate("3 Assi", "3-Achsiger","3 Axes") ?></option>
+                      <option value="assi4"><? translate("4 Assi", "4-Achsiger","4 Axes") ?></option>
+                      <option value="bilico"><? translate("Bilico", "Satterschlepper","Semi-remorque") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
@@ -209,7 +209,7 @@
                       type="text"
                       class="form-control"
                       id="datainizio"
-                      placeholder="gg/mm/aaaa"
+                      placeholder="<? translate("gg/mm/aaaa", "tt/mm/jjjj","jj/mm/aaaa") ?>"
                       required
                     />
                   </div>
@@ -219,7 +219,7 @@
                       type="text"
                       class="form-control"
                       id="datafine"
-                      placeholder="gg/mm/aaaa"
+                      placeholder="<? translate("gg/mm/aaaa", "tt/mm/jjjj","jj/mm/aaaa") ?>"
                       required
                     />
                   </div>
@@ -273,18 +273,18 @@
               </div>
             </div>
             <div class="col-sm px-4 mt-4">
-              <p class="h4">Stoccaggio cemento Stabio</p>
+              <p class="h4"><? translate("Stoccaggio cemento Stabio", "Stabio zementlager","Depot de stockage de ciments en vrac à Stabio") ?></p>
               <img
                     class="w-100 lightbox-img"
                     src="assets/cemento/cemento1.jpg"
                     alt=""
                   />
               <ul class="lista-dati">
-                <li><b>2500t</b> di stoccaggio</li>
-                <li><b>7</b> sili</li>
-                <li><b>9</b> tipi di cemento</li>
-                <li><b>2</b> punti di carico su gomma</li>
-                <li><b>1</b> punto di carico per treni</li>
+                <li><b>2500t</b> <? translate("di stoccaggio", "zementlager","de stockage") ?></li>
+                <li><b>7</b> <? translate("sili", "silo","silo") ?></li>
+                <li><b>9</b> <? translate("tipi di cemento", "zementsorten","ciments") ?></li>
+                <li><b>2</b> <? translate("punti di carico su gomma", "LKW-beladung","points de chargement camion") ?></li>
+                <li><b>1</b> <? translate("punto di carico per treni", "waggonbeladung","points de chargement train") ?></li>
               </ul>
               <img
                     class="w-100 lightbox-img"
