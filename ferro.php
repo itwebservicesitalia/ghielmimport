@@ -157,7 +157,7 @@
                       >
                       <option value="assi3"><? translate("3 Assi", "3-Achser LKW","3 Axes") ?></option>
                       <option value="assi4"><? translate("4 Assi", "4-Achser LKW","4 Axes") ?></option>
-                      <option value="bilico"><? translate("Bilico", "Sattelschlepper","Semi") ?></option>
+                      <option value="bilico"><? translate("Bilico", "Sattelschlepper","Semi-remorque") ?></option>
                     </select>
                   </div>
                   <div class="form-group">
@@ -185,7 +185,7 @@
                       type="text"
                       class="form-control"
                       id="datainizio"
-                      placeholder="gg/mm/aaaa"
+                      placeholder="<? translate("gg/mm/aaaa", "tt/mm/jjjj","jj/mm/aaaa") ?>"
                     />
                   </div>
 

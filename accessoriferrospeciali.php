@@ -132,7 +132,7 @@
                           class="custom-file-label"
                           for="lista4"
                           data-browse="<? translate("Sfoglia", "Wählen","Choisir") ?>"
-                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sèlectionnez le fichier") ?></label
+                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sélectionnez le fichier") ?></label
                         >
                       </div>
                     </div>

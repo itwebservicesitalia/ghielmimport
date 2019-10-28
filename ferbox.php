@@ -86,7 +86,7 @@
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3><? translate("Ferbox ferri di ripresa", "Ferbox Armierungs anschluss","Ferbox raccorderents d'armatures") ?></h3>
+                <h3><? translate("Ferbox ferri di ripresa", "Ferbox Armierungsanschluss","Ferbox raccorderents d'armatures") ?></h3>
                 <p class="lead"></p>
                 <hr />
                 <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
@@ -174,7 +174,7 @@
                   </div>
                   <div class="form-group">
                     <label for="cantieremagazzino"
-                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für eventuelle Lieferung","Chantier de construction ou entrepôt pour livraison") ?></label
+                      ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für eventuelle Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
                     >
                     <input
                       type="text"

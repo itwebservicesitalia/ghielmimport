@@ -51,7 +51,7 @@
                 </div>
                 <div class="card-body d-flex align-items-end pt-2">
                   <div class="card-content">
-                    <h5 class="card-title"><? translate("Ferbox ferri di ripresa", "Ferbox Armierungs anschluss","Ferbox raccorderents d'armatures") ?></h5>
+                    <h5 class="card-title"><? translate("Ferbox ferri di ripresa", "Ferbox Armierungsanschluss","Ferbox raccordements d'armatures") ?></h5>
 
                     <a href="ferbox.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>" class="btn btn-primary"
                       ><? translate("Richiedi offerta", "Angebot anfordern","Demander une offre") ?></a

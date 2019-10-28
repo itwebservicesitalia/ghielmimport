@@ -65,7 +65,7 @@
                   </div>
                   <div class="form-group">
                       <label for="cantieremagazzino"
-                        ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für eventuelle Lieferung","Chantier de construction ou entrepôt pour livraison") ?></label
+                        ><? translate("Cantiere o magazzino per eventuale consegna", "Baustelle oder Lager für eventuelle Lieferung","Chantier de construction ou entrepôt pour livraison possible") ?></label
                       >
                       <input
                         type="text"
