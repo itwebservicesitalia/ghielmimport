@@ -90,7 +90,7 @@
                     <label for="tipocemento"><? translate("Tipologia cemento", "Zement typ","Type de ciment") ?></label>
                     <select class="form-control" id="tipocemento" required>
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
-                      <option disabled value=""><? translate("SFUSO", "LOSEZEMENT","CIMENT EN VIAC") ?></option>
+                      <option disabled value=""><? translate("SFUSO", "LOSEZEMENT","CIMENT EN VRAC") ?></option>
                       <option value="Cem II B-LL 32,5 R SFUSO"
                         >Cem II B-LL 32,5 R</option
                       >
@@ -272,32 +272,35 @@
                 <?php include "include/footer.php" ?>
               </div>
             </div>
-            <div class="col-sm px-4 mt-4">
-              <p class="h4"><? translate("Stoccaggio cemento Stabio", "Stabio zementlager","Depot de stockage de ciments en vrac à Stabio") ?></p>
-              <img
-                    class="w-100 lightbox-img"
-                    src="assets/cemento/cemento1.jpg"
-                    alt=""
-                  />
-              <ul class="lista-dati">
-                <li><b>2500t</b> <? translate("di stoccaggio", "zementlager","de stockage") ?></li>
-                <li><b>7</b> <? translate("sili", "silo","silo") ?></li>
-                <li><b>9</b> <? translate("tipi di cemento", "zementsorten","ciments") ?></li>
-                <li><b>2</b> <? translate("punti di carico su gomma", "LKW-beladung","points de chargement camion") ?></li>
-                <li><b>1</b> <? translate("punto di carico per treni", "waggonbeladung","points de chargement train") ?></li>
-              </ul>
-              <img
-                    class="w-100 lightbox-img"
-                    src="assets/cemento/cemento2.jpg"
-                    alt=""
-                  />
-              <img
-                    class="w-100 lightbox-img"
-                    src="assets/cemento/cemento3.jpg"
-                    alt=""
-                  />
-              <div class="separator"></div>
-              <img class="d-block pt-3 m-auto" src="assets/logoghielmiswiss.jpg" style="width:150px" alt="Ghielmimport Swiss">
+            <div class="col-sm px-4 mt-4 d-flex flex-column justify-content-between">
+              <div>
+                <p class="h4"><? translate("Stoccaggio cemento Stabio", "Stabio zementlager","Depot de stockage de ciments en vrac à Stabio") ?></p>
+                <img
+                      class="w-100 lightbox-img"
+                      src="assets/cemento/cemento1.jpg"
+                      alt=""
+                    />
+                <img
+                      class="w-100 lightbox-img"
+                      src="assets/cemento/cemento2.jpg"
+                      alt=""
+                    />
+                <ul class="lista-dati">
+                  <li><b>2500t</b> <? translate("di stoccaggio", "zementlager","de stockage") ?></li>
+                  <li><b>7</b> <? translate("sili", "silo","silo") ?></li>
+                  <li><b>9</b> <? translate("tipi di cemento", "zementsorten","ciments") ?></li>
+                  <li><b>2</b> <? translate("punti di carico su gomma", "LKW-beladung","points de chargement camion") ?></li>
+                  <li><b>1</b> <? translate("punto di carico per treni", "waggonbeladung","points de chargement train") ?></li>
+                </ul>
+                <img
+                      class="w-100 lightbox-img"
+                      src="assets/cemento/cemento3.jpg"
+                      alt=""
+                    />
+              </div>
+              <div>
+                <img class="d-block pb-4 m-auto" src="assets/logoghielmiswiss.jpg" style="width:150px" alt="Ghielmimport Swiss">
+              </div>
             </div>
           </div>
         </div>
