@@ -280,15 +280,17 @@
                       src="assets/cemento/cemento1.jpg"
                       alt=""
                     />
+                <ul class="lista-dati">
+                  <li><b>2500t</b> <? translate("di stoccaggio", "zementlager","de stockage") ?></li>
+                  <li><b>7</b> <? translate("sili", "silo","silo") ?></li>
+                  <li><b>9</b> <? translate("tipi di cemento", "zementsorten","ciments") ?></li>
+                </ul>
                 <img
                       class="w-100 lightbox-img"
                       src="assets/cemento/cemento2.jpg"
                       alt=""
                     />
                 <ul class="lista-dati">
-                  <li><b>2500t</b> <? translate("di stoccaggio", "zementlager","de stockage") ?></li>
-                  <li><b>7</b> <? translate("sili", "silo","silo") ?></li>
-                  <li><b>9</b> <? translate("tipi di cemento", "zementsorten","ciments") ?></li>
                   <li><b>2</b> <? translate("punti di carico su gomma", "LKW-beladung","points de chargement camion") ?></li>
                   <li><b>1</b> <? translate("punto di carico per treni", "waggonbeladung","points de chargement train") ?></li>
                 </ul>
@@ -299,7 +301,7 @@
                     />
               </div>
               <div>
-                <img class="d-block pb-4 m-auto" src="assets/logoghielmiswiss.jpg" style="width:150px" alt="Ghielmimport Swiss">
+                <img class="d-block m-auto pb-5" src="assets/logoghielmiswiss.jpg" style="width:150px" alt="Ghielmimport Swiss">
               </div>
             </div>
           </div>

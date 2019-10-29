@@ -46,7 +46,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
               <div class="card mb-3">
-                <div class="img-wrap" style="height:276px">
+                <div class="img-wrap" style="<? translate("", "","height:276px") ?>">
                   <img src="assets/accessori/ferbox.png" alt="" />
                 </div>
                 <div class="card-body d-flex align-items-end pt-2">
