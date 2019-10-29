@@ -301,7 +301,7 @@
                     />
               </div>
               <div>
-                <img class="d-block m-auto pb-5" src="assets/logoghielmiswiss.jpg" style="width:150px" alt="Ghielmimport Swiss">
+                <img class="d-block m-auto" src="assets/logoghielmiswiss.jpg" style="width:150px; padding-bottom:5rem" alt="Ghielmimport Swiss">
               </div>
             </div>
           </div>
