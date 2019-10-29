@@ -16,7 +16,6 @@
 
 .lightbox-img {
   cursor: pointer;
-  border-radius: 10px;
 }
 
 .lista-caratteristiche {
@@ -33,6 +32,10 @@
   font-size: 20px;
 }
 
+.separator {
+  height: 900px;
+}
+
 @media (max-width: 768px) {
   .page-title {
     font-size: 22px;
@@ -40,6 +43,9 @@
 
   #content {
     margin-left: 0;
+  }
+  .separator {
+    height: 0px;
   }
 }
 

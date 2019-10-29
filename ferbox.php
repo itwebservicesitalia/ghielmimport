@@ -86,7 +86,7 @@
                 </div>
               </div>
               <div class="col-sm m-3">
-                <h3><? translate("Ferbox ferri di ripresa", "Ferbox Armierungsanschluss","Ferbox raccorderents d'armatures") ?></h3>
+                <h3><? translate("Ferbox ferri di ripresa", "Ferbox Armierungsanschluss","Ferbox raccordements d'armatures") ?></h3>
                 <p class="lead"></p>
                 <hr />
                 <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>

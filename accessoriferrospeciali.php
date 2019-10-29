@@ -72,7 +72,7 @@
                           class="custom-file-label"
                           for="lista1"
                           data-browse="<? translate("Sfoglia", "Wählen","Choisir") ?>"
-                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sèlectionnez le fichier") ?></label
+                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sélectionnez le fichier") ?></label
                         >
                       </div>
                     </div>
@@ -92,7 +92,7 @@
                           class="custom-file-label"
                           for="lista2"
                           data-browse="<? translate("Sfoglia", "Wählen","Choisir") ?>"
-                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sèlectionnez le fichier") ?></label
+                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sélectionnez le fichier") ?></label
                         >
                       </div>
                     </div>
@@ -112,7 +112,7 @@
                           class="custom-file-label"
                           for="lista3"
                           data-browse="<? translate("Sfoglia", "Wählen","Choisir") ?>"
-                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sèlectionnez le fichier") ?></label
+                          ><? translate("Seleziona il file", "Wählen Sie die Datei aus","Sélectionnez le fichier") ?></label
                         >
                       </div>
                     </div>
@@ -154,7 +154,7 @@
               </div>
             </div>
             <div class="col-md px-4 mt-4">
-              <p class="h4">Elementi termoisolanti</p>
+              <p class="h4"><? translate("Elementi termoisolanti","Elementi termoisolanti","Élements d'armature thermo-isolants") ?></p>
               <img
                 class="w-100 lightbox-img"
                 src="assets/accessori/speciali/termoisolanti.png
@@ -163,19 +163,16 @@
               />
               <ul class="lista-caratteristiche">
                 <li>
-                  Risoluzione del problema delle connessioni dei balconi con la
-                  struttura principale
+                <? translate("Risoluzione del problema delle connessioni dei balconi con la struttura principale","Risoluzione del problema delle connessioni dei balconi con la struttura principale","Ils résolvent le question de la connexion du balcon avec la structure principale") ?>
                 </li>
                 <li>
-                  Riduzione dei ponti termici e dei conseguenti danni legati
-                  alla muffa e all’umidità
+                <? translate("Riduzione dei ponti termici e dei conseguenti danni legati alla muffa e all’umidità","Riduzione dei ponti termici e dei conseguenti danni legati alla muffa e all’umidità","Ils limitent sensiblement les ponts thermiques et les domages dûs à la mousissure et à l'humidité") ?>
                 </li>
                 <li>
-                  Disponibile in diverse versioni, in funzione delle molteplici
-                  applicazioni edilizie
+                <? translate("Disponibile in diverse versioni, in funzione delle molteplici applicazioni edilizie","Disponibile in diverse versioni, in funzione delle molteplici applicazioni edilizie","Disponibles en plusieurs variantes, relatives à de multiples situations techniques") ?>
                 </li>
               </ul>
-              <p class="h4">Elementi al punzonamento</p>
+              <p class="h4"><? translate("Elementi al punzonamento","Elementi al punzonamento","Technique de poinçonnement") ?></p>
               <img
                 class="w-100 lightbox-img"
                 src="assets/accessori/speciali/punzonamento.png
@@ -183,14 +180,14 @@
                 alt=""
               />
               <ul class="lista-caratteristiche">
-                <li>Installazione possibile dall'alto e dal basso</li>
-                <li>Applicazione per solette piene, spessore ≥ 18 cm</li>
-                <li>Installazione rapida e semplice</li>
+                <li><? translate("Installazione possibile dall'alto e dal basso","Installazione possibile dall'alto e dal basso","Le positionnement est possible par le haut et par le dessous") ?></li>
+                <li><? translate("Applicazione per solette piene, spessore ≥ 18 cm","Applicazione per solette piene, spessore ≥ 18 cm","Ils pouvent être utilisés pour les dalles en beton d'épaisseur ≥ 18cm") ?></li>
+                <li><? translate("Installazione rapida e semplice","Installazione rapida e semplice","Montage rapide et simple") ?></li>
                 <li>
-                  Fornitura di teste in acciaio in caso di carichi elevati
+                <? translate("Fornitura di teste in acciaio in caso di carichi elevati","Fornitura di teste in acciaio in caso di carichi elevati","Élements speciaux (têtes de poinçonnement en acier) sont fournis relativement à éléves charges") ?>
                 </li>
               </ul>
-              <p class="h4">Elementi insonorizzanti</p>
+              <p class="h4"><? translate("Elementi insonorizzanti","Elementi insonorizzanti","Élements insonorisants") ?></p>
               <div class="row">
                 <div class="col-sm">
                   <img
@@ -208,14 +205,13 @@
                 </div>
               </div>
               <ul class="lista-caratteristiche">
-                <li>Montaggio rapido e semplice grazie al kit di fornitura</li>
-                <li>Elevato isolamento anticalpestio</li>
+                <li><? translate("Montaggio rapido e semplice grazie al kit di fornitura","Montaggio rapido e semplice grazie al kit di fornitura","Mise en oeuvre simple et rapid") ?></li>
+                <li><? translate("Elevato isolamento anticalpestio","Elevato isolamento anticalpestio","Isolation élévée contre les bruits de l'escalier vers les murs de la cage d'escalier") ?></li>
                 <li>
-                  Elementi speciali disponibili su richiesta per forze di taglio
-                  contrastanti
+                <? translate("Elementi speciali disponibili su richiesta per forze di taglio contrastanti","Elementi speciali disponibili su richiesta per forze di taglio contrastanti","Disponible avec le manchon antifeu (classe de résistance au feu F90)") ?>
                 </li>
               </ul>
-              <p class="h4">Sistemi per casseforme</p>
+              <p class="h4"><? translate("Sistemi per casseforme","Sistemi per casseforme","Technique de coffrage") ?></p>
               <div class="row">
                 <div class="col-sm">
                   <img
@@ -234,21 +230,19 @@
               </div>
               <ul class="lista-caratteristiche">
                 <li>
-                  Usato per i giunti di ripresa di elementi costruttivi
-                  orizzontali in beton
+                <? translate("Usato per i giunti di ripresa di elementi costruttivi
+                  orizzontali in beton","Usato per i giunti di ripresa di elementi costruttivi orizzontali in beton","Utilisé pour joints de reprise horizontals (radiers et dalles) et verticals (murs)") ?>
                 </li>
                 <li>
-                  Dotato di fori per dare continuità ai ferri d’armatura, non
-                  richiede operazioni di disarmo, non ha effetti di
-                  irruvidimento, e non deve essere pulito a fine getto
+                <? translate("Dotato di fori per dare continuità ai ferri d’armatura non richiede operazioni di disarmo, non ha effetti di irruvidimento, e non deve essere pulito a fine getto","Dotato di fori per dare continuità ai ferri d’armatura non richiede operazioni di disarmo, non ha effetti di irruvidimento, e non deve essere pulito a fine getto","Avec trous pour garantir la continuité des fers et dentelure de joints") ?>
                 </li>
                 <li>
-                  È ottimale al fine della velocizzazione del processo
-                  cantieristico
+                <? translate("È ottimale al fine della velocizzazione del processo
+                  cantieristico","È ottimale al fine della velocizzazione del processo cantieristico","Pas de décoffrage, ni de grattage et de nottoyage, donc pas d'interruption du travail") ?>
                 </li>
                 <li>
-                  Abbinabile alla posa di nastri impermeabili usati per i giunti
-                  di lavoro.
+                <? translate("Abbinabile alla posa di nastri impermeabili usati per i giunti di lavoro.","Abbinabile alla posa di nastri impermeabili usati per i giunti di lavoro.","Possibilité de combinaison avec des membranes étanches pour joints de reprise") ?>
+                  
                 </li>
               </ul>
             </div>

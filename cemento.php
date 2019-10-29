@@ -170,10 +170,10 @@
                     >
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
                       <option value="assi2"
-                        ><? translate("2 Assi (Solo per Canton Ticino)", "2-Achsiger (nur für Kanton Tessin)","2 Axes (uniquement pour le canton du Tessin)") ?></option
+                        ><? translate("2 Assi (Solo per Canton Ticino)", "2-Achsiger LKW (nur für Kanton Tessin)","2 Axes (uniquement pour le canton du Tessin)") ?></option
                       >
-                      <option value="assi3"><? translate("3 Assi", "3-Achsiger","3 Axes") ?></option>
-                      <option value="assi4"><? translate("4 Assi", "4-Achsiger","4 Axes") ?></option>
+                      <option value="assi3"><? translate("3 Assi", "3-Achsiger LKW","3 Axes") ?></option>
+                      <option value="assi4"><? translate("4 Assi", "4-Achsiger LKW","4 Axes") ?></option>
                       <option value="bilico"><? translate("Bilico", "Sattelsclepper","Semi-remorque") ?></option>
                     </select>
                   </div>
@@ -291,7 +291,12 @@
                     src="assets/cemento/cemento2.jpg"
                     alt=""
                   />
-              
+              <img
+                    class="w-100 lightbox-img"
+                    src="assets/cemento/cemento3.jpg"
+                    alt=""
+                  />
+              <div class="separator"></div>
               <img class="d-block pt-3 m-auto" src="assets/logoghielmiswiss.jpg" style="width:150px" alt="Ghielmimport Swiss">
             </div>
           </div>
