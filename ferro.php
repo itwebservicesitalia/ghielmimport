@@ -289,6 +289,9 @@
                     <label for="tipofornitura"><? translate("Tipo di prestazione", "Art der Dienstleistungen","Type de service") ?></label>
                     <select class="form-control" id="tipofornitura">
                       <option selected disabled value=""><? translate("Scegli", "Wählen","Choisir") ?></option>
+                      <option value="fornituraposa"
+                        ><? translate("Fornitura e posa", "Lieferung und verlegung","Fourniture et pose") ?></option
+                      >
                       <option value="fornitura"
                         ><? translate("Fornitura (con posa effettuata dall'impresa)", "Lieferung (verlegung durch die Firma)","Fourniture (pose de la ferraillage par l'enterprise)") ?></option
                       >
