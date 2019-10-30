@@ -105,6 +105,7 @@
                 >
                 <hr />
                 <form id="ferro">
+                  <input id="language" type="hidden" value="<? translate('it','de','fr') ?>">
                   <div class="form-group">
                     <label for="denominazionecantiere"
                       ><? translate("Denominazione cantiere", "Name der Baustelle","Désignation du site") ?></label

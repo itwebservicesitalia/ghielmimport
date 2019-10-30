@@ -120,16 +120,15 @@ for (var i = 0; i < inputFile.length; i++) {
   });
 }
 
-
 //Lightbox
 var lightbox = $("#lightbox");
 var lightboxModalImg = document.querySelector("#lightbox-modal-img");
 var images = document.querySelectorAll(".lightbox-img");
 
 images.forEach(img => {
-  img.addEventListener("click",(e) => {
+  img.addEventListener("click", e => {
     lightboxModalImg.setAttribute("src", img.getAttribute("src"));
     lightbox.modal("show");
     e.preventDefault();
-  })
-})
+  });
+});

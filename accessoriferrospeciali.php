@@ -35,6 +35,7 @@
                 >
                 <hr />
                 <form id="accessoriferrospeciali">
+                  <input id="language" type="hidden" value="<? translate('it','de','fr') ?>">
                   <div class="form-group">
                     <label for="denominazionecantiere"
                       ><? translate("Denominazione cantiere", "Name der Baustelle","Désignation du site") ?></label

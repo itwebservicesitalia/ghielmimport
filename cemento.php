@@ -34,6 +34,7 @@
                 >
                 <hr />
                 <form id="cemento">
+                  <input id="language" type="hidden" value="<? translate('it','de','fr') ?>">
                   <div class="form-group">
                     <label for="denominazionecantiere"
                       ><? translate("Denominazione cantiere","Standortbezeichnung","Désignation du site") ?></label

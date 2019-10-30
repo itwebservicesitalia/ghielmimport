@@ -88,6 +88,7 @@
                 <hr />
                 <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="spinotti">
+                  <input id="language" type="hidden" value="<? translate('it','de','fr') ?>">
                   <div class="form-group">
                     <label for="tipospinotto"><? translate("Tipo Spinotto", "Schubdorne Typ","Type de goujon") ?></label>
                     <input

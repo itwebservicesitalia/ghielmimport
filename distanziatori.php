@@ -81,6 +81,7 @@
                 <hr />
                 <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="distanziatori">
+                  <input id="language" type="hidden" value="<? translate('it','de','fr') ?>">
                   <div class="form-group">
                     <label for="piedino"><? translate("Presenza piedino", "Fußpräsenz","Présence de pied") ?></label>
 

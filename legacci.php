@@ -39,6 +39,7 @@
                 <hr />
                 <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="drunterfix">
+                  <input id="language" type="hidden" value="<? translate('it','de','fr') ?>">
                   <div class="form-group">
                     <label for="lunghezza"><? translate("Lunghezza (cm)", "Länge (cm)","Longueur (cm)") ?></label>
 

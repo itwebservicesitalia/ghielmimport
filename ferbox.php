@@ -91,6 +91,7 @@
                 <hr />
                 <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="ferbox">
+                  <input id="language" type="hidden" value="<? translate('it','de','fr') ?>">
                   <div class="form-group">
                     <label for="tipoferbox"><? translate("Tipo FERBOX", "Geben Sie FERBOX ein","Type FERBOX") ?></label>
                     <input

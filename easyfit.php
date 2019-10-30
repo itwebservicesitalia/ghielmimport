@@ -113,6 +113,7 @@
                 <hr />
                 <p class="h5"><? translate("Richiesta d'offerta", "Angebotsanfrage","Demande d'offre") ?></p>
                 <form id="easyfit">
+                  <input id="language" type="hidden" value="<? translate('it','de','fr') ?>">
                   <div class="form-group">
                     <label for="sagoma"
                       ><? translate("Forma sagoma ferro", "Eisenform","Forme de fer") ?>
