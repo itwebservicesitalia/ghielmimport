@@ -25,7 +25,7 @@
         <?php include "include/modal.php" ?>
         <div class="container">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-lg-8">
               <div class="container px-4 mt-3">
                 <div id="sidebar-toggle">
                   <i class="fas fa-bars"></i>
@@ -154,7 +154,7 @@
                 <?php include "include/footer.php" ?>
               </div>
             </div>
-            <div class="col-md px-4 mt-4">
+            <div class="col-lg px-4 mt-4">
               <p class="h4"><? translate("Elementi termoisolanti","Elementi termoisolanti","Élements d'armature thermo-isolants") ?></p>
               <img
                 class="w-100 lightbox-img"

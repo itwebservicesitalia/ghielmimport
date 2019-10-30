@@ -24,7 +24,7 @@
       <?php include "include/modal.php" ?>
         <div class="container">
           <div class="row">
-            <div class="col-sm-8">
+            <div class="col-lg-8">
               <div class="container px-4 mt-3">
                 <div id="sidebar-toggle">
                   <i class="fas fa-bars"></i>
@@ -273,7 +273,7 @@
                 <?php include "include/footer.php" ?>
               </div>
             </div>
-            <div class="col-sm px-4 mt-4 d-flex flex-column justify-content-between">
+            <div class="col-lg px-4 mt-4 d-flex flex-column justify-content-between">
               <div>
                 <p class="h4"><? translate("Stoccaggio cemento Stabio", "Stabio zementlager","Depot de stockage de ciments en vrac à Stabio") ?></p>
                 <img

@@ -61,7 +61,7 @@
 
           <div class="card">
             <div class="row">
-              <div class="col-sm-4">
+              <div class="col-lg-4 order-2 order-lg-1">
                 <div class="img-container">
                   <img src="assets/accessori/distanziatori.png" alt="" class="lightbox-img" />
                 </div>
@@ -75,7 +75,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-sm m-3">
+              <div class="col-lg order-1 order-lg-2 m-3">
                 <h3><? translate("Distanziatori", "Distanzkörbe","Panier de support") ?></h3>
                 <p class="lead"></p>
                 <hr />
