@@ -1,6 +1,6 @@
 "use strict";
 
-var APIURL = "http://api.ghielmimport.ch:1500";
+var APIURL = "https://api.ghielmimport.ch";
 var form = document.forms[0];
 var submitBtn = document.getElementById("submit");
 
@@ -18,7 +18,7 @@ if (form) {
 
 if (submitBtn) {
   //Evento click del pulsante submit del form
-  submitBtn.addEventListener("click", function(e) {
+  submitBtn.addEventListener("click", function (e) {
     e.preventDefault();
     var data = new FormData();
     var requiredCounter = 0;
@@ -60,7 +60,7 @@ if (submitBtn) {
     if (document.querySelectorAll(".is-invalid").length > 0) return;
     axios
       .post("".concat(APIURL, "/").concat(form.id), data)
-      .then(function(success) {
+      .then(function (success) {
         $("html,body").animate(
           {
             scrollTop: 0
@@ -77,7 +77,7 @@ if (submitBtn) {
 
         console.log(success);
       })
-      .catch(function(err) {
+      .catch(function (err) {
         return console.log(err);
       });
   });
@@ -86,7 +86,7 @@ if (submitBtn) {
 var inputText = document.querySelectorAll("input,select");
 
 for (var i = 0; i < inputText.length; i++) {
-  inputText[i].addEventListener("change", function(e) {
+  inputText[i].addEventListener("change", function (e) {
     if (e.target.value !== "") {
       e.target.classList.add("is-valid");
       e.target.classList.remove("is-invalid");
@@ -100,7 +100,7 @@ for (var i = 0; i < inputText.length; i++) {
 var inputFile = document.querySelectorAll(".custom-file-input");
 
 for (var i = 0; i < inputFile.length; i++) {
-  inputFile[i].addEventListener("change", function(e) {
+  inputFile[i].addEventListener("change", function (e) {
     var file = e.target.files[0];
     console.log(file);
 
