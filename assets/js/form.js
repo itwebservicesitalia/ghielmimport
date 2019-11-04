@@ -1,5 +1,6 @@
 "use strict";
 
+// API URL
 var APIURL = "https://api.ghielmimport.ch";
 var form = document.forms[0];
 var submitBtn = document.getElementById("submit");
