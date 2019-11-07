@@ -281,6 +281,7 @@
                       src="assets/cemento/cemento1.jpg"
                       alt=""
                     />
+                <p><? translate("L’impianto di Stabio è completamente automatizzato e consente di soddisfare tempestivamente le esigenze della clientela svizzera, sia ticinese che d’oltre Gottardo.", "Die Stabio-Anlage ist vollständig automatisiert und ermöglicht es Ihnen, schnell auf die Bedürfnisse der Schweizer Kunden im Tessin und darüber hinaus zu reagieren.","L'usine Stabio est entièrement automatisée et vous permet de répondre rapidement aux besoins des clients suisses, tant du Tessin que de Gottardo.") ?></p>
                 <ul class="lista-dati">
                   <li><b>2500t</b> <? translate("di stoccaggio", "zementlager","de stockage") ?></li>
                   <li><b>7</b> <? translate("sili", "silo","silo") ?></li>
@@ -291,6 +292,7 @@
                       src="assets/cemento/cemento2.jpg"
                       alt=""
                     />
+                <p><? translate("L’impianto è a ridosso di un raccordo ferroviario ad uso esclusivo ed ha un sistema di carico dei vagoni che consente di consegnare i prodotti attraverso la rete ferroviaria.", "Das Werk befindet sich neben einem Eisenbahnknotenpunkt zur ausschließlichen Nutzung und verfügt über ein Wagenladesystem, mit dem die Produkte über das Eisenbahnnetz geliefert werden können.","L'usine est adjacente à un nœud ferroviaire à usage exclusif et dispose d'un système de chargement des wagons qui permet de livrer les produits via le réseau ferroviaire.") ?></p>
                 <ul class="lista-dati">
                   <li><b>2</b> <? translate("punti di carico su gomma", "LKW-beladung","points de chargement camion") ?></li>
                   <li><b>1</b> <? translate("punto di carico per treni", "waggonbeladung","points de chargement train") ?></li>
@@ -300,9 +302,21 @@
                       src="assets/cemento/cemento3.jpg"
                       alt=""
                     />
+                <p><? translate("Il cemento in sacco è disponibile nei magazzini di Mezzovico e di Serocca D’Agno", "Sackzement ist in den Lagern von Mezzovico und Serocca D’Agno erhältlich","Le ciment en sac est disponible dans les entrepôts de Mezzovico et Serocca D’Agno") ?></p>
+                <img
+                      class="w-100 lightbox-img"
+                      src="assets/cemento/cemento4.jpg"
+                      alt=""
+                    />
+                
+                <img
+                      class="w-100 lightbox-img pt-3"
+                      src="assets/cemento/cemento5.jpg"
+                      alt=""
+                    />
               </div>
               <div>
-                <img class="d-block m-auto" src="assets/logoghielmiswiss.jpg" style="width:150px; padding-bottom:5rem" alt="Ghielmimport Swiss">
+                <img class="d-block m-auto" src="assets/logoghielmiswiss.jpg" style="width:180px; padding-bottom:5rem" alt="Ghielmimport Swiss">
               </div>
             </div>
           </div>
