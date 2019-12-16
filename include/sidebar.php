@@ -19,7 +19,7 @@
     </div>
     <span class="h4"><? translate("Richiesta d'offerta", "Anfrageformular","Demande d'offre") ?></span>
   </div>
-  <ul class="sidebar-menu">  
+  <ul class="sidebar-menu"> 
     <a href="ferro.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>"><li><? translate("Ferro", "Eisen","Fer") ?></li></a>
     <a href="accessoriferro.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>"><li><? translate("Accessori Ferro", "Eisen Zubehör","Accessoires de fer") ?></li></a>
     <a href="accessoriferrospeciali.php<? if($_GET["lang"]){echo "?lang=".$_GET["lang"];}; ?>"><li><? translate("Accessori Ferro (speciali)", "Eisen Zubehör (Spezial)","Accessoires de fer (spécial)") ?></li></a>
