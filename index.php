@@ -34,7 +34,7 @@
                 <div class="card my-2">
                     <img src="assets/mockup/mockupferro.png" class="card-img-top p-2" alt="Richiesta d'offerta ferro">
                     <div class="card-body text-center">
-                        <h5 class="card-title text-uppercase"><? translate("Ferro","Eisen","Fer") ?></h5>
+                        <h4 class="card-title text-uppercase"><? translate("Ferro","Eisen","Fer") ?></h4>
                         <a href="ferro.php<? translate("","?lang=de","?lang=fr") ?>" class="btn btn-block button-brand"><? translate("Vai alla pagina","Gehe zur Seite","Aller à la page") ?></a>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                 <div class="card my-2">
                     <img src="assets/mockup/mockupaccessoriferro.png" class="card-img-top p-2" alt="Richiesta d'offerta accessori ferro">
                     <div class="card-body text-center">
-                        <h5 class="card-title text-uppercase"><? translate("Accessori Ferro","Eisen Zubehör","Accessoires de fer") ?></h5>
+                        <h4 class="card-title text-uppercase"><? translate("Accessori Ferro","Eisen Zubehör","Accessoires de fer") ?></h4>
                         <a href="accessoriferro.php<? translate("","?lang=de","?lang=fr") ?>" class="btn btn-block button-brand"><? translate("Vai alla pagina","Gehe zur Seite","Aller à la page") ?></a>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                 <div class="card my-2">
                     <img src="assets/mockup/mockupcemento.png" class="card-img-top p-2" alt="Richiesta d'offerta cemento">
                     <div class="card-body text-center">
-                        <h5 class="card-title text-uppercase"><? translate("Cemento","Zement","Ciment") ?></h5>
+                        <h4 class="card-title text-uppercase"><? translate("Cemento","Zement","Ciment") ?></h4>
                         <a href="cemento.php<? translate("","?lang=de","?lang=fr") ?>" class="btn btn-block button-brand"><? translate("Vai alla pagina","Gehe zur Seite","Aller à la page") ?></a>
                     </div>
                 </div>
