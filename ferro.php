@@ -26,7 +26,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <img class="w-100" src="./assets/empa.png" alt="" />
+                <img class="w-100" src="./assets/empa.jpg" alt="" />
                 <a href="assets/documenti/empa.pdf" class="btn btn-primary mt-2"
                   >Download PDF</a
                 >
@@ -308,7 +308,7 @@
               <p class="h4"><? translate("Certificazione EMPA","EMPA-Zertifizierung","Certification EMPA") ?></p>
               <div class="img-portfolio">
                 <a onclick="$('#empa').modal('show')"
-                  ><img class="w-100" src="assets/empa.png" alt=""
+                  ><img class="w-100" src="assets/empa.jpg" alt=""
                 /></a>
               </div>
               <br>
