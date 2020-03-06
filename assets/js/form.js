@@ -1,7 +1,7 @@
 "use strict";
 
 // API URL
-var APIURL = "https://ghielmimport-api.herokuapp.com/";
+var APIURL = "https://ghielmimport-api.herokuapp.com";
 var form = document.forms[0];
 var submitBtn = document.getElementById("submit");
 
