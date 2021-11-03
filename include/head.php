@@ -1,6 +1,6 @@
 <?php
   function translate($it,$de,$fr){
-    $lang = $_GET["lang"]; //variabile lingua
+    $lang = $_GET["lang"] ?? "it"; //variabile lingua
     switch ($lang){
       case "fr":
         echo $fr;
